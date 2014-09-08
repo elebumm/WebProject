@@ -1,4 +1,4 @@
 WebProject
 ==========
 
-Repo for Ashika, Scott, and I's Web Project.
+Repo for Ashika, Scott, and Lewis' Web Project.

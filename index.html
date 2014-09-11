@@ -7,7 +7,7 @@
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+	<link rel="stylesheet" href="css/index.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
@@ -18,14 +18,39 @@
 	<script src="js/navbar.js"></script>
 	
 </head>
-
 <body>
+<!--Carousel JS-->
+<script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
    <div id="navbar">
    
    </div>
    
-   <div id="content">
+   <div id="wrap">
+   
    </div>
+  <h1 id="title">Hello</h1>
+  <div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+    <li>
+      <img src="slide2.jpg" />
+    </li>
+    <li>
+      <img src="slide3.jpg" />
+    </li>
+    <li>
+      <img src="slide4.jpg" />
+    </li>
+  </ul>
+</div>
   
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

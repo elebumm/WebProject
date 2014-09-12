@@ -64,3 +64,6 @@ background:     white;
 .navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
 color:          #5A5A5A;
 }
+.loginfixer {
+	color: white;
+}

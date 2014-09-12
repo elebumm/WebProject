@@ -25,7 +25,11 @@ font-size:      1.5em;
 padding:        5px 15px;
 top: 14.9px;
 }
- 
+
+.active {
+	background-color: blue;
+}
+
 .navbar-inverse {
  background-color: #222222
 }

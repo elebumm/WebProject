@@ -1,0 +1,24 @@
+CREATE TABLE products (
+	product_id	  VARCHAR2(5) CONSTRAINT pro_pr_id_pk PRIMARY KEY,
+	title         VARCHAR2 (30) NOT NULL,
+	platform      VARCHAR2 (20) NOT NULL,
+	language      VARCHAR2 (10) NOT NULL,
+	developer     VARCHAR2(30) NOT NULL,
+	publisher     VARCHAR2 (30) NOT NULL,
+	rating        VARCHAR2(4) NOT NULL,
+	genre         VARCHAR2(10)  NOT NULL,
+	price         NUMBER (4, 2)   NOT NULL,
+	stock_amount  NUMBER(3) NOT NULL
+);
+
+CREATE TABLE customers (
+  customer_id     VARCHAR2(6) CONSTRAINT cus_cos_id_pk PRIMARY KEY,
+  first_name      VARCHAR2(20)  NOT NULL,
+  last_name       VARCHAR2(20)  NOT NULL,
+  street_address  VARCHAR2(30)  NOT NULL,
+  city            VARCHAR2(10)  NOT NULL,
+  province        VARCHAR2(2) NOT NULL,
+  postal_code     VARCHAR2(7) NOT NULL,
+  phone_num       VARCHAR2(12)  NOT NULL
+);
+  

@@ -1,8 +1,14 @@
+body{
+	background-color: #12007E;
+}
 .title  {
 color: white;
 text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
 }
 
+.jumbotron {
+	background-color: #12007E;
+}
 .slogan  {
 color: white;
 text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;

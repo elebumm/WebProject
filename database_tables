@@ -3,7 +3,7 @@ CREATE TABLE products (
 	title         VARCHAR2 (30) NOT NULL,
 	platform      VARCHAR2 (20) NOT NULL,
 	language      VARCHAR2 (10) NOT NULL,
-	developer     VARCHAR2(30) NOT NULL,
+	developer     VARCHAR2(30),
 	publisher     VARCHAR2 (30) NOT NULL,
 	rating        VARCHAR2(4) NOT NULL,
 	genre         VARCHAR2(10)  NOT NULL,

@@ -21,4 +21,10 @@ CREATE TABLE customers (
   postal_code     VARCHAR2(7) NOT NULL,
   phone_num       VARCHAR2(12)  NOT NULL
 );
+
+CREATE TABLE accounts (
+   username	VARCHAR2(10)	NOT NULL,
+   password	VARCHAR2(16)	NOT NULL,
+   customer_id	VARCHAR2(6)	CONSTRAINT acc_cus_id_fk FOREIGN KEY
+);
   

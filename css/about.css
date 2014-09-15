@@ -5,7 +5,9 @@ body {
   color: #5a5a5a;
 }
 
-
+#backbutton {
+  position: fixed;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -19,7 +21,15 @@ body {
   z-index: 10;
 }
 
+#creators {
+  text-align: center;
+  color: white;
+  font-size: 400%
+}
 
+.peeps {
+  color: white;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

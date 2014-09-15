@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link href="css/about.css" rel="stylesheet">
 	<!-- Optional theme -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="css/styles.css">
 	<!-- Latest compiled and minified JavaScript -->
@@ -20,121 +21,115 @@
 </head>
 
 <body>
-   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../index.html">SkalezGames</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class=""><a href="../products.html">Games</a></li>
-            <li><a href="../about.html" class="active">About</a></li>
-            <li><a href="../login.html">Login</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-   
-   <div id="content">
-   </div>
-   <!-- Carousel
-   ================================================== -->
-   <div id="myCarousel" class="carousel slide">
-     <!-- Indicators -->
-     <ol class="carousel-indicators">
-       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-       <li data-target="#myCarousel" data-slide-to="1"></li>
-       <li data-target="#myCarousel" data-slide-to="2"></li>
-     </ol>
-     <div class="carousel-inner">
-       <div class="item active">
-         <img src="/assets/example/bg_suburb.jpg" class="img-responsive">
-         <div class="container">
-           <div class="carousel-caption">
-             <h1>Bootstrap 3 Carousel Layout</h1>
-             <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p></p>
-             <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
-           </p></pthis></div>
-         </div>
-       </div>
-       <div class="item">
-         <img src="http://lorempixel.com/1500/600/abstract/1" class="img-responsive">
-         <div class="container">
-           <div class="carousel-caption">
-             <h1>Changes to the Grid</h1>
-             <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p>
-             <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
-           </div>
-         </div>
-       </div>
-       <div class="item">
-         <img src="http://placehold.it/1500X500" class="img-responsive">
-         <div class="container">
-           <div class="carousel-caption">
-             <h1>Percentage-based sizing</h1>
-             <p>With "mobile-first" there is now only one percentage-based grid.</p>
-             <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
-           </div>
-         </div>
-       </div>
-     </div>
-     <!-- Controls -->
-     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-       <span class="icon-prev"></span>
-     </a>
-     <a class="right carousel-control" href="#myCarousel" data-slide="next">
-       <span class="icon-next"></span>
-     </a>  
-   </div>
-   <!-- /.carousel -->
-
+<a href="index.html"><button type="button" class="btn btn-default btn-lg" id="backbutton">
+  <span class="glyphicon glyphicon-arrow-left"></span> Back
+</button></a>
 
    <!-- Marketing messaging and featurettes
    ================================================== -->
    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+   <h2 class="featurette-heading" id="creators">The Creators</h2>
+
 
    <div class="container marketing">
 
      <!-- Three columns of text below the carousel -->
      <div class="row">
        <div class="col-md-4 text-center">
-         <img class="img-circle" src="http://placehold.it/140x140">
-         <h2>Mobile-first</h2>
-         <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
-         <p><a class="btn btn-default" href="#">View details »</a></p>
+         <img class="img-circle" src="img/about1.jpg">
+         <h2 class="peeps">Scott Melanson</h2>
+         <p>As a game designer and programmer. Scott has been passionate about video games ever since he was a young boy.</p>
+         <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#scott">
+  More about Scott »
+</button>
+
        </div>
        <div class="col-md-4 text-center">
-         <img class="img-circle" src="http://placehold.it/140x140">
-         <h2>One Fluid Grid</h2>
-         <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
-         <p><a class="btn btn-default" href="#">View details »</a></p>
+         <img class="img-circle" src="img/about2.jpg">
+         <h2 class="peeps">Lewis Menelaws</h2>
+         <p>Lewis has always been a fan of Web Design and Web Development when he was young. He is inspired to start his own business!</p>
+               <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#lewis">
+  More about Lewis »
+</button>
        </div>
        <div class="col-md-4 text-center">
-         <img class="img-circle" src="http://placehold.it/140x140">
-         <h2>LESS is More</h2>
-         <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
-         <p><a class="btn btn-default" href="#">View details »</a></p>
+         <img class="img-circle" src="img/about3.jpg">
+         <h2 class="peeps">Ashika Shallow</h2>
+         <p>Ashika is a Database Wizard. She may seem quiet but she can make one hell of a database. Ashika is an ambitious programmer!</p>
+         <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ashika">
+  More about Ashika »
+</button>
        </div>
      </div><!-- /.row -->
+
+<!-- Scott's pop up window-->
+<div class="modal fade" id="scott" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">More about Scott Melanson</h4>
+      </div>
+      <div class="modal-body">
+      <h1>Scott is a student at Lambton College! His favorite class is Web Project!</h1>
+      <p>Places where you can find Scott</p>
+        <i class="fa fa-github"><a href="https://github.com/SerenityTheFool"><p>Github</p></a></i>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Scott's pop up window-->
+<!-- Lewis's pop up window-->
+<div class="modal fade" id="lewis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">More about Lewis Menelaws</h4>
+      </div>
+      <div class="modal-body">
+      <h4>Lewis is a student at Lambton College! His favorite class is Web Project!</h4>
+      <p>Places where you can find Lewis</p>
+        <i class="fa fa-github"><a href="https://github.com/elebumm"><p>Github</p></a></i>
+        <i class="fa fa-twitter"><a href="https://twitter.com/LewisMenelaws"><p>Twitter</p></a></i>
+        <i class="fa fa-linkedin"><a href="https://www.linkedin.com/profile/view?id=245679159&trk=nav_responsive_tab_profile_pic"><p>Linkedin</p></a></i>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Lewis's pop up window-->
+<div class="modal fade" id="ashika" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">More about Ashika Shallow</h4>
+      </div>
+      <div class="modal-body">
+      <h4>Ashika is a student at Lambton College! Her favorite class is Database!</h4>
+      <p>Places where you can find Lewis</p>
+        <i class="fa fa-github"><a href="https://github.com/AshTears"><p>Github</p></a></i>
+        <i class="fa fa-linkedin"><a href="https://www.linkedin.com/profile/view?id=294125328&authType=name&authToken=yifB&trk=nmp_rec_act_profile_photo"><p>Linkedin</p></a></i>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
      <!-- START THE FEATURETTES -->
@@ -142,25 +137,26 @@
      <hr class="featurette-divider">
 
      <div class="featurette">
-       <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-       <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
-       <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
+       <img class="featurette-image img-circle pull-right" src="img/shop1.jpg">
+       <h2 class="featurette-heading">For the geeks. <span class="text-muted">By the Geeks.</span></h2>
+       <p class="lead">We are passionate about games and the gaming community. We wouldn't ever put a game up for more than it's worth.
+       We also can answer any questions you ask!</p>
      </div>
 
      <hr class="featurette-divider">
 
      <div class="featurette">
-       <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
-       <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
-       <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+       <img class="featurette-image img-circle pull-left" src="img/game1.jpg">
+       <h2 class="featurette-heading">So many games. So Little time. </h2>
+       <p class="lead">At SkalezGames, we know you don't want time wasted with extra promotional offers and merchandise. We deliver your game fast and as hastle free as possible!</p>
      </div>
 
      <hr class="featurette-divider">
 
      <div class="featurette">
-       <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-       <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
-       <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+       <img class="featurette-image img-circle pull-right" src="img/hand1.jpg">
+       <h2 class="featurette-heading">Trust us, we can help.</h2>
+       <p class="lead">We know that gamers already know what they want... but some don't. That is why we are able to help you with any question you have in store!</p>
      </div>
 
    

@@ -12,6 +12,15 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+#lolheading {
+	color: white;
+}
+
+#lolheading2 {
+	color: white;
+	text-align: center;
+}
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;

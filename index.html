@@ -17,10 +17,20 @@
 	
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/navbar.js"></script>
-	
+	<script type="text/javascript"> 
+	var totalCount = 6;
+	function ChangeIt() 
+	{
+	var num = Math.ceil( Math.random() * totalCount );
+	document.body.background = 'img/backgrounds/'+num+'.jpg';
+	document.body.style.backgroundSize = "cover";// Background repeat
+	}
+	</script>
 </head>
 <body>
-
+	<script type="text/javascript"> 
+	ChangeIt();
+	</script>
    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">

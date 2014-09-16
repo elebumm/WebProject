@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skalez Games</title>
+	<link rel="stylesheet" href="themes/mobile.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/carousel-style.css">
+</head>
+<body>
+
+	<div data-role="page" data-theme="a">
+		<div data-role="header" style="overflow:hidden;">
+		<h1>Skalez Games</h1>
+		    <a href="#" data-icon="gear" class="ui-btn-right">Options</a>
+		    <div data-role="navbar">
+		        <ul>
+		            <li><a href="#" data-icon="home">Home</a></li>
+		            <li><a href="#" data-icon="shop">Games</a></li>
+		            <li><a href="#" data-icon="info">About</a></li>
+					<li><a href="#" data-icon="user">Account</a></li>
+		        </ul>
+		    </div><!-- /navbar -->
+		</div>
+		<div data-role="content" data-theme="a">
+			<!-- include carousel.css -->
+
+
+			<!-- the viewport -->
+			<div class="m-carousel m-fluid m-carousel-photos">
+			  <!-- the slider -->
+			  <div class="m-carousel-inner">
+			    <!-- the items -->
+			    <div class="m-item m-active">
+			      <img src="about1.jpg">
+			    </div>
+			    <div class="m-item">
+			      <img src="about2.jpg">
+			    </div>
+			    <div class="m-item">
+			      <img src="about3.jpg">
+			    </div>
+			  </div>
+			  <!-- the controls -->
+			  <div class="m-carousel-controls m-carousel-bulleted">
+			    <a href="#" data-slide="prev">Previous</a>
+			    <a href="#" data-slide="1" class="m-active">1</a>
+			    <a href="#" data-slide="2">2</a>
+			    <a href="#" data-slide="3">3</a>
+			    <a href="#" data-slide="next">Next</a>
+			  </div>
+			</div>
+
+			<!-- include zepto.js or jquery.js -->
+			<script src="zepto.js"></script>
+			<!-- include carousel.js -->
+			<script src="carousel.js"></script>
+			<!-- construct the carousel -->
+			<script>$('.m-carousel').carousel()</script>
+		</div>
+	</div>
+</body>
+</html>

@@ -22,8 +22,20 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
     }
 
 
+#newreleases {
+	position: absolute;
+	right: 120px;
+	bottom: 255px;
+	color: white;
+
+}
 
 
+#releasetable {
+	position: absolute;
+	right: 1px;
+	bottom: -64px;
+}
 
 
 
@@ -38,7 +50,9 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
 
 
 
-
+.pure-table-odd {
+	color: grey;
+}
 
 
 

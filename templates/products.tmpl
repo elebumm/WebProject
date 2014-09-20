@@ -1,0 +1,38 @@
+<!--SKALEZGAMES PRODUCTS TEMPLATE-->
+
+<div>
+	<table id="tproducts">
+		<caption>Games</caption>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Title</th>
+				<th>Platform</th>
+				<th>Language</th>
+				<th>Developer</th>
+				<th>Publisher</th>
+				<th>Rating</th>
+				<th>Genre</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#rows}}
+			<tr>
+				<td class="centre">
+					<img src="img/{{product_id}}.jpg" width="75" height="110" alt="{{title}}" title="{{title}}" />
+				</td>
+				<td class="title">{{TITLE}}</td>
+				<td>{{PLATFORM}}</td>
+				<td>{{LANGUAGE}}</td>
+				<td>{{DEVELOPER}}</td>
+				<td>{{PUBLISHER}}</td>
+				<td>{{RATING}}</td>
+				<td>{{GENRE}}</td>
+				<td id="price">{{formatCurrency PRICE}}</td>
+			</tr>
+		{{/rows}}
+		</tbody>
+	</table>
+	<p class="toplink"><a href="#container">Back to top</a></p>
+</div>

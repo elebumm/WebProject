@@ -30,7 +30,7 @@ INSERT INTO products VALUES
 INSERT INTO products VALUES
 ('XB101','Minecraft','XBOX 360','English','Mojang','Microsoft','E','Puzzle',19.83);
 INSERT INTO products VALUES
-('XB103','Assassin\'s Creed Rogue','XBOX 360','English','','Ubisoft','M','Action Adventure',59.99);
+('XB103','Assassins Creed Rogue','XBOX 360','English','','Ubisoft','M','Action Adventure',59.99);
 INSERT INTO products VALUES
 ('XB105','Diablo: Reaper of Souls','XBOX 360','English','Blizzard','Activision','M','Action',44.99);
 INSERT INTO products VALUES
@@ -56,7 +56,7 @@ INSERT INTO products VALUES
 INSERT INTO products VALUES
 ('NO115','Bravely Default','Nintendo 3DS','Japanese','Square Enix','Nintendo','T','RPG',39.96);
 INSERT INTO products VALUES
-('NO117','Virtue\'s Las Reward','Nintendo 3DS','Japanese','','Aksys','M','Story',29.99);
+('NO117','Virtues Las Reward','Nintendo 3DS','Japanese','','Aksys','M','Story',29.99);
 INSERT INTO products VALUES
 ('PS113','Danganronpa 2: Goodbye Despair','PSVITA','English','','NIS America','M','Survival',39.99);
 INSERT INTO products VALUES

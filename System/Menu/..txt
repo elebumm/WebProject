@@ -1,3 +1,0 @@
-<script>
-  parent.x("abc");
-</script>

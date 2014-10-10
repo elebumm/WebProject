@@ -1,0 +1,25 @@
+.x-btn a {
+  border:0 none;
+  background:transparent;
+  font:normal 11px tahoma,verdana,helvetica;
+  padding-left:3px;
+  padding-right:3px;
+  cursor:pointer;
+  margin:0;
+  overflow:visible;
+  width:auto;
+  -moz-outline:0 none;
+  outline:0 none;
+  text-decoration:none;
+  color:#F4F4F4;
+}
+* html .ext-ie .x-btn a {
+  width:1px;
+}
+.ext-gecko .x-btn a {
+  padding-left:0;
+  padding-right:0;
+}
+.ext-ie .x-btn a {
+  padding-top:2px;
+}

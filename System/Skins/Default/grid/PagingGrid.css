@@ -1,0 +1,89 @@
+.dynGrid table, .dynGrid table td {
+	font-size: 9pt;
+	white-space: nowrap;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;	
+	/* border: 0px; */
+}
+
+.dynGrid .dynCell {
+	cursor:pointer;
+	cursor:hand;
+	white-space: nowrap;
+	border-bottom: 1px solid #EEE;	
+	overflow: hidden;
+}
+
+.dynGrid .dynCell div 
+{
+    font-size: 9pt;
+	padding-right: 10px;
+	padding-left: 10px;	
+}
+
+.dynGrid .dynRow-Selected {
+	background-color: #316AC5;
+	color: #FFF	
+}
+
+.dynGrid .dynRow-Hover {
+	background-color: #316AC5;
+	color: #FFF
+}
+
+.dynGrid .dynRow-Normal {
+	background-color: transparent;
+	color: #000;
+}
+
+.dynGrid .dynRow-Shade{
+   background-color: #F4F4F4;
+}
+
+.dynGrid .HeadingNormal {	
+	background-repeat: repeat-x;
+	background-image: url(columnbg.gif);	
+	height: 26px;
+	font-size: 8pt;
+	cursor:pointer;
+	cursor:hand;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dynGrid .HeadingNormal div 
+{   
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 4px;
+	white-space: nowrap;
+}
+
+.dynGrid .HeadingHover, .dynGrid .HeadingSelect {	
+	background-repeat: repeat-x;
+	background-image: url(columnbg-hover.gif);
+	white-space: nowrap;
+	height: 26px;
+	font-size: 8pt;
+	cursor:pointer;
+	cursor:hand;
+	overflow: hidden;
+
+}
+
+.dynGrid .HeadingNormal div .filterIcon { }
+
+.DragInfo {
+	position: absolute;
+	font-family: Arial;	
+	top: 0px;
+	right: 0px;
+	display: none;		
+	background-color: #FFF9B0;
+	border: 1px solid #FFE450;
+	padding: 5px;
+	font-size: 8pt;
+	z-index: 1000;
+}

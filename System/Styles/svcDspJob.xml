@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="/System/Styles/svcDspJob.xsl" ?>
+	<errors>
+
+	 <!--#tag="htmlRow"--> 				 
+      <error>
+         <msgid><%$ msgid %></msgid>
+         <desc><%$ desc %></desc>
+         <msgtype><%$ msgtype %></msgtype>
+         <severity><%$ severity %></severity>
+         <fromproc><%$ fromproc %></fromproc>
+         <frommod><%$ frommod %></frommod>
+         <frompgm><%$ frompgm %></frompgm>
+         <fromlib><%$ fromlib %></fromlib>
+         <fromstmt><%$ fromstmt %></fromstmt>
+         <toproc><%$ topproc %></toproc>
+         <tomod><%$ tomod %></tomod>
+         <topgm><%$ topgm %></topgm>
+         <tolib><%$ tolib %></tolib>
+         <tostmt><%$ tostmt %></tostmt>
+      </error>
+
+<!--#tag="htmlFooter"--> 
+</errors>

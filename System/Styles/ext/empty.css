@@ -1,0 +1,18 @@
+.x-tool-save {
+  background-image:url(/system/images/ext/vista/home.gif);
+  background-position:0px 0px;
+}
+.x-tool-save-over {
+  background-image:url(/system/images/ext/vista/home.gif);
+  background-position:-15px 0px;
+}
+.x-panel-body {
+  background-color:#eff1f5;
+}
+.x-item-disabled {
+  color:#000000;
+  opacity:0.8;  
+}
+.x-tab-panel-body {
+  background:#EFF1F5 none repeat scroll 0 0;
+}

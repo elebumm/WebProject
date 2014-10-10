@@ -1,0 +1,49 @@
+body { 
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-RIGHT-COLOR: #111111;
+    BORDER-TOP: 0px solid;
+    MARGIN: 0px 0px 0px 0px;
+    BORDER-LEFT: 0px solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: 1px solid;
+    BACKGROUND-COLOR: #cccccc;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 11px;
+
+}
+.crum { 
+{
+    BORDER-RIGHT-COLOR: #111111;
+    BORDER: 1px 1px 1px 1px;
+    BORDER-color: #ffffff;
+    COLOR: #000000;
+    BACKGROUND-COLOR: #cccccc;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 11px;
+
+}
+A
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    COLOR: #000000;
+    BACKGROUND-COLOR: #ededed;
+    TEXT-DECORATION: none;
+}
+
+A:link
+{
+  COLOR: #666666
+}
+A:visited
+{
+}
+ 
+A:hover
+{
+  COLOR: #666666;
+  BACKGROUND-COLOR: #f9f9f9;
+	FONT-STYLE: bold;
+}
+

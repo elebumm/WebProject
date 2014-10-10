@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skalez Games</title>
+	<link rel="stylesheet" href="themes/mobile.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/carousel-style.css">
+</head>
+<body>
+
+	<div data-role="page" href="#home" data-url="home" data-theme="a">
+		<div data-role="header" style="overflow:hidden;">
+		<h1>Skalez Games</h1>
+		    <a href="#home" data-icon="gear" class="ui-btn-right">Options</a>
+		    <div data-role="navbar">
+		        <ul>
+		            <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+		            <li><a href="#games" data-icon="shop">Games</a></li>
+		            <li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#Account" data-icon="user">Account</a></li>
+		        </ul>
+		    </div><!-- /navbar -->
+		</div>
+		<div data-role="content" data-theme="a">
+			<!-- include carousel.css -->
+
+			<h1 class="ui-title">Welcome to Skalez Games!</h1>
+			<!-- the viewport -->
+			<div class="m-carousel m-fluid m-carousel-photos">
+			  <!-- the slider -->
+			  <div class="m-carousel-inner">
+			    <!-- the items -->
+			    <div class="m-item m-active">
+			      <img src="img/1.jpg">
+			    </div>
+			    <div class="m-item">
+			      <img src="img/2.jpg">
+			    </div>
+			    <div class="m-item">
+			      <img src="img/3.jpg">
+			    </div>
+			  </div>
+			  <!-- the controls -->
+			  <div class="m-carousel-controls m-carousel-bulleted">
+			    <a href="#" data-slide="prev">Previous</a>
+			    <a href="#" data-slide="1" class="m-active">1</a>
+			    <a href="#" data-slide="2">2</a>
+			    <a href="#" data-slide="3">3</a>
+			    <a href="#" data-slide="next">Next</a>
+			  </div>
+			</div>
+
+			<!-- include zepto.js or jquery.js -->
+			<script src="JS/jquery-1.11.1.min.js"></script>
+			<!-- include carousel.js -->
+			<script src="JS/carousel.js"></script>
+			<!-- construct the carousel -->
+			<script>$('.m-carousel').carousel()</script>
+		</div>
+	</div>
+	
+	
+	
+	<!-- ABOUT -->
+	<div data-role="page" href="#about" data-url="about" data-theme="a">
+		<div data-role="header" style="overflow:hidden;">
+		<h1>Skalez Games</h1>
+		    <a href="#" data-icon="gear" class="ui-btn-right">Options</a>
+		    <div data-role="navbar">
+		        <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+		            <li><a href="#games" data-icon="shop">Games</a></li>
+		            <li><a href="#about" class="ui-btn-active" data-icon="info">About</a></li>
+					<li><a href="#Account" data-icon="user">Account</a></li>
+		        </ul>
+		    </div><!-- /navbar -->
+		</div>
+		<div data-role="content" data-theme="a">
+			<h1>About Us!</h1>
+			  </div>
+			 
+			 			</div>
+
+			<!-- include zepto.js or jquery.js -->
+			<script src="JS/jquery-1.11.1.min.js"></script>
+			<!-- include carousel.js -->
+			<script src="JS/carousel.js"></script>
+			<!-- construct the carousel -->
+			<script>$('.m-carousel').carousel()</script>
+		</div>
+	</div>
+</body>
+</html>

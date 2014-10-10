@@ -1,0 +1,102 @@
+DIV.gridbox_light {
+	
+}
+DIV.gridbox_light TABLE.hdr {
+	BACKGROUND-IMAGE: url(../../skins/IceBreakAdmin/grid/columnbg.gif)
+}
+DIV.gridbox_light TABLE.hdr TD {
+	BORDER-RIGHT: 0px; BORDER-TOP: #fdfdfd 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; VERTICAL-ALIGN: top; BORDER-LEFT: 0px; COLOR: #055a78; BORDER-BOTTOM: #93afba 1px solid; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+DIV.gridbox_light TABLE.hdr TD DIV {
+	PADDING-LEFT: 10px; WIDTH: auto
+}
+DIV.gridbox_light TABLE.obj TD {
+	BORDER-TOP-WIDTH: 0px; BORDER-RIGHT: 0px; PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT: 0px; FONT-FAMILY: Tahoma
+}
+DIV.gridbox_light TABLE.obj {
+	BORDER-BOTTOM: #d6d6d6 1px solid
+}
+DIV.gridbox_light TABLE.row20px TR TD {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px
+}
+DIV.gridbox_light .dhx_combo_edit {
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma
+}
+DIV.gridbox_light TABLE.obj TR.rowselected TD {
+	COLOR: black; BACKGROUND-COLOR: #ededed
+}
+DIV.gridbox_light TABLE.obj TR.rowselected TD.cellselected {
+	BACKGROUND-COLOR: #ededed
+}
+DIV.gridbox TABLE.obj TD.cellselected {
+	BACKGROUND-COLOR: #ededed
+}
+DIV.gridbox_light .odd_light {
+	BACKGROUND-COLOR: #e5f2f8
+}
+DIV.gridbox_modern {
+	BORDER-RIGHT: #d6d6d6 1px solid; BORDER-TOP: #d6d6d6 1px solid; BORDER-LEFT: #d6d6d6 1px solid; BORDER-BOTTOM: #d6d6d6 1px solid
+}
+DIV.gridbox_modern TABLE.hdr {
+	BACKGROUND-IMAGE: url(../../skins/IceBreakAdmin/grid/columnbg.gif)
+}
+DIV.gridbox_modern TABLE.hdr TD {
+	BORDER-RIGHT: #b5b5b5 1px solid; BORDER-TOP: #fdfdfd 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; VERTICAL-ALIGN: top; BORDER-LEFT: #fdfdfd 1px solid; COLOR: #055a78; BORDER-BOTTOM: #b5b5b5 1px solid; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+DIV.gridbox_modern TABLE.hdr TD DIV {
+	PADDING-LEFT: 10px; WIDTH: auto
+}
+DIV.gridbox_modern TABLE.obj TD {
+	BORDER-RIGHT: 0px solid; PADDING-RIGHT: 4px; BORDER-TOP: 0px solid; PADDING-LEFT: 4px; FONT-SIZE: 11px; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 0px solid; FONT-FAMILY: Tahoma
+}
+DIV.gridbox_modern TABLE.row20px TR TD {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px
+}
+DIV.gridbox_modern .dhx_combo_edit {
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma
+}
+DIV.gridbox_modern TABLE.obj TR.rowselected TD {
+	COLOR: black; BACKGROUND-COLOR: #9ac2e5
+}
+DIV.gridbox_modern TABLE.obj TR.rowselected TD.cellselected {
+	BACKGROUND-COLOR: #9ac2e5
+}
+DIV.gridbox TABLE.obj TD.cellselected {
+	BACKGROUND-COLOR: #9ac2e5
+}
+DIV.gridbox_modern .odd_modern {
+	BACKGROUND-COLOR: #ededed
+}
+DIV.gridbox_clear DIV.topMumba {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LEFT: 0px; BACKGROUND-IMAGE: url(../imgs/skinC_header.png); PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 100%; PADDING-TOP: 0px; POSITION: absolute; HEIGHT: 3px
+}
+DIV.gridbox_clear DIV.bottomMumba {
+	LEFT: 0px; BACKGROUND-IMAGE: url(../imgs/skinD_header.png); OVERFLOW: hidden; WIDTH: 100%; POSITION: absolute; HEIGHT: 3px
+}
+DIV.gridbox_clear DIV.bottomMumba IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; POSITION: absolute; TOP: 0px
+}
+DIV.gridbox_clear DIV.topMumba IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; POSITION: absolute; TOP: 0px
+}
+DIV.gridbox_clear {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px
+}
+DIV.gridbox_clear TABLE.hdr TD {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11px; VERTICAL-ALIGN: top; BORDER-LEFT: 0px; COLOR: #055a78; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+DIV.gridbox_clear TABLE.hdr TD DIV {
+	PADDING-LEFT: 10px; PADDING-BOTTOM: 2px; WIDTH: auto
+}
+DIV.gridbox_clear TABLE.obj TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 4px; PADDING-LEFT: 4px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11px; BORDER-LEFT-COLOR: #d6d6d6; BORDER-BOTTOM-WIDTH: 0px; BORDER-BOTTOM-COLOR: #d6d6d6; BORDER-TOP-COLOR: #d6d6d6; FONT-FAMILY: Tahoma; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #d6d6d6
+}
+DIV.gridbox_clear TABLE.row20px TR TD {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px
+}
+DIV.gridbox_clear .dhx_combo_edit {
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma
+}
+DIV.gridbox_clear .odd_light {
+	BACKGROUND-COLOR: #e5f2f8
+}

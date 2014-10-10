@@ -1,0 +1,140 @@
+/* @override http://localhost/~aron/sysmetappstore/header/style.css */
+
+
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+.left{
+	width: 16px;
+	background: url(/system/images/left.png);
+	height: 70px;
+	display: block;
+	float: left;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	z-index: 1;
+
+}
+
+.middle{
+	position: relative;
+	left: 0px;
+	top: 10px;
+	padding-top: 5px;
+	height: 65px;
+	width: 100%;
+	float: left;
+	display: block;
+	background: url(/system/images/mid.png) no-repeat;
+	background-color: #9DB1C2;
+	overflow: hidden;
+}
+
+.right{
+	width: 15px;
+	background: url(/system/images/right.gif);
+	height: 70px;
+	display: block;
+	float: left;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+
+.middle h1{
+	display: block;
+	float: left;
+	font-size: 16px;
+	color: white;
+	clear: both;
+}
+
+#line1{
+	position: absolute;
+	left: 30px;
+	top: 00px;
+	*top: 10px
+}
+#line2{
+	position: absolute;
+	left: 30px;
+	top: 17px;
+	*top: 27px
+
+}
+
+#line3{
+	position: absolute;
+	left: 30px;
+	top: 35px;
+	*top: 45px;
+
+}
+
+.middle p{
+	font-size: 12px;
+	display: block;
+	float: left;
+	color: white;
+	clear: both;
+}
+
+
+.button{
+	background: url(/system/images/Install.gif) no-repeat;
+	width: 183px;
+	height: 21px;
+	left: 608px;
+	top: 50px;
+	clear: none;
+	overflow: hidden;
+	position: absolute;
+	cursor: pointer;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border: none;
+}
+
+#goback{
+	background: url(/system/images/goback.gif) no-repeat;
+	width: 183px;
+	height: 21px;
+	left: 608px;
+	top: 50px;
+	clear: none;
+	overflow: hidden;
+	position: absolute;
+	cursor: pointer;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border: none;
+	float: left;
+}
+table{
+	margin-left: 10px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+th{
+	font-size: 11px;
+}
+td.ErrorText{
+	COLOR: red;
+	BACKGROUND-COLOR: transparent
+}
+td.field-description {
+	width: 200px;
+	font-size: 11px;
+}
+td input{
+	font-size: 11px;
+}
+td input.FileUpload{
+	font-size: 15px;
+}
+td {
+	font-size: 11px;
+}
+

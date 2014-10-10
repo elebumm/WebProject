@@ -22,14 +22,12 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
     }
 
 
-	
-
-
 #newreleases {
 	position: absolute;
 	right: 120px;
 	bottom: 255px;
 	color: white;
+	float:right;
 
 }
 

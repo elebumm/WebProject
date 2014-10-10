@@ -1,14 +1,15 @@
-<!-- SKALEZGAMES PRODUCTS CONTROLLER -->
+//SKALEZGAMES PRODUCTS CONTROLLER
     
 $(document).ready(function() {
 	getData();
 });
 	
 function getData() {
-	var path = 'products.rpgle';
+	var path = 'products.json';
 	$.ajax({
 		url: path,
 		dataType: 'json',
+		//type: 'post',
 		cache: false,
 		success: renderData,
 		error: errorAlert	
@@ -17,14 +18,14 @@ function getData() {
 	
 function renderData(jsonData) {
 	var template;
-	var path = 'templates/products.tmpl';
+	var path = 'products.tmpl';
 	$.ajax({
 		url: path,
 		cache: false,
 		success: function(source) {
 			template = Handlebars.compile(source);
-			$("body").html(template(jsonData));
-			$('#tproducts').dataTable( { "sPaginationType": "full_numbers"} );
+			$('#productstmpl').html(template(jsonData));
+			$('#tproducts').dataTable( { "sPaginationType": "full_numbers", "bProcessing": true} );
 		},
 		error: errorAlert	          
 	});         

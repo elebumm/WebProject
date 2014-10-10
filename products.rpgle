@@ -1,22 +1,23 @@
 <%@ language="RPGLE" %>
 <%
-H decedit('0.') datFmt(*USA)
-D startRow        C                   1
-D maxRows         C                   999
-D sqlCmd          S           8192    varying
+D startRow       	C           	1
+D maxRows         C           	999
+D sqlCmd          S      8192 	varying
 
 /free
-setContentType('application/json; charset=utf-8');
 
-sqlCmd = ('                                            +
-	SELECT title,									+
-  	platform,										+
-  	language,										+
+SetContentType('application/json; charset=utf-8');
+
+sqlCmd = ('                    		+
+	SELECT product_id,							+				 
+		title,												+
+  	platform,											+
+  	glanguage,										+
   	developer,										+
-  	publisher,
-  	rating,											+
-  	genre,											+
-  	DECIMAL(price, 4, 2) AS price					+
+  	publisher,										+
+  	rating,												+
+  	genre,												+
+  	price													+
   FROM products										+
   FOR READ ONLY										+
 ');

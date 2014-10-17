@@ -4,37 +4,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Buy Video Games - SkalezGames</title>
-	
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	
-	<!-- Optional theme -->
+	<!-- Optional theme --> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- Latest compiled and minified JavaScript--> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	
+
+	<!--Products css-->
+	<link href="css/products.css" rel="stylesheet">		
+		
+	<!--DataTables css-->
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.3/css/jquery.dataTables.css">
+		
+	<!-- Handlebars --> 
+	<script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"></script>
+		
+	<!-- Handlebars Helpers  -->
+	<script src="js/helpers.js"></script>
+		
+	<!-- jQuery -->
 	<script src="js/jquery-2.1.1.min.js"></script>
+
+	<!--Products js-->
 	<script src="js/navbar.js"></script>
-	
-		<!--Products css-->
-		<link href="css/products.css" rel="stylesheet">
+	<script src="js/products.js"></script>
 		
-		<!--Products js-->
-		<script src="js/products.js"></script>
 		
-		<!--DataTables css-->
-		<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10-dev/css/jquery.dataTables.css">
-		
-		<!-- Handlebars -->
-		<script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"></script>
-		
-		<!-- Handlebars Helpers -->
-		<script src="js/helpers.js"></script>
-		
-		<!-- DataTables -->
-		<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10-dev/js/jquery.dataTables.js"></script>
+	<!-- DataTables-->				
+	<script type="text/javascript" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="../../media/js/dataTables.editor.min.js"></script>
 	
 </head>
 
@@ -78,19 +81,6 @@
       </div>
     </div>
     <h1>Games</h1>
-    <form id="formList">
-    	<select id="platforms" name="platforms">
-    			<option value="">All platforms</option>
-    			<option value="ps3">PS3</option>
-    			<option value="ps4">PS4</option>
-    			<option value="xbox360">XBOX 360</option>
-    			<option value="xboxone">XBOX ONE</option>
-    			<option value="wiiu">Wii U</option>
-    			<option value="3ds">Nintendo 3DS</option>
-    			<option value="psvita">PSVita</option>
-    			<option value="pc">PC</option>
-    	</select>	
-    </form>
    
    <div id="productstmpl">
    
@@ -100,9 +90,9 @@
      
 </body>
 		
-		<!--jQuery-->
+		<!--jQuery
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     

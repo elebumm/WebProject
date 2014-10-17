@@ -20,12 +20,15 @@
 </head>
 
 <body>
+
+
    <div id="navbar">
    
    </div>
    
+   <div class="jumbotron">
    <div id="content">
-   <form  action="register.php" autocomplete="on"> 
+   <form  action="register.php" autocomplete="on" method="post"> 
     <h1> Sign up </h1> 
     <p> 
          <label for="firstnamesignup" class="fname" data-icon="u">First Name:</label>
@@ -128,6 +131,8 @@
     <input type="submit" value="Register"/> 
     </p>
 </form>
+   
+   </div>
    
    </div>
    

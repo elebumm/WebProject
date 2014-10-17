@@ -87,7 +87,30 @@
 			 			</div>
 
 
-	<div data-role="page" href="#signup" data-url="signup" data-theme="a">
+	<!-- GAMES -->
+	<div data-role="page" href="#games" data-url="games" data-theme="a">
+		<div data-role="header" style="overflow:hidden;">
+		<h1>Skalez Games</h1>
+		    <a href="#signup" data-icon="gear" class="ui-btn-right">Sign Up</a>
+		    <div data-role="navbar">
+		        <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+		            <li><a href="#games" data-icon="shop">Games</a></li>
+		            <li><a href="#about" class="ui-btn-active" data-icon="info">About</a></li>
+					<li><a href="#Account" data-icon="user">Account</a></li>
+		        </ul>
+		    </div><!-- /navbar -->
+		</div>
+		<div data-role="content" data-theme="a">
+			<h1>About Us!</h1>
+			  </div>
+			 
+			 			</div>
+
+
+
+
+	<div data-role="page" href="#games" data-url="games" data-theme="a">
 		<div data-role="header" style="overflow:hidden;">
 		<h1>Skalez Games</h1>
 		    <a href="#" data-icon="gear" class=" ui-btn-active ui-btn-right">Sign Up</a>
@@ -374,7 +397,10 @@
 			<label for="text-basic">Postal Code:</label>
 			<input type="text" name="text-basic" id="text-basic" value="">
 			
-			<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-right ui-icon-carat-r">Submit</a>
+			<a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Submit</a>
+			<div data-role="popup" id="popupBasic">
+			<p>Thank you for signing up to Skalez Games!</p>
+			</div>
 			  </div>
 			  
 			 

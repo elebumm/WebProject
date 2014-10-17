@@ -22,20 +22,13 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
     }
 
 
-#newreleases {
-	position: absolute;
-	right: 120px;
-	bottom: 255px;
-	color: white;
-	float:right;
 
-}
 
 
 #releasetable {
-	position: absolute;
-	right: 1px;
-	bottom: -64px;
+	position: relative;
+
+	float: right;
 }
 
 
@@ -49,6 +42,10 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
   background-image: url('../img/backgrounds/');
 }
 
+.container {
+	position: relative;
+	
+}
 
 
 .pure-table-odd {

@@ -1,104 +1,29 @@
 /*Skalez Games products css page*/
 
-/* DataTables framework */
-
-div.dataTables_wrapper {
-	border: 2px solid white;
-	padding: 1em 0;
-}
-
-div.dataTables_length {
-	float: left;
-}
-
-div.dataTables_filter {
-	float: right;
-}
-
-div.dataTables_info {
-
-}
-
-div.dataTables_paginate {
-	float: right;
-}
-
-div.dataTables_length, div.dataTables_filter, div.dataTables_paginate {
-	padding: 6px;
-}
-
-/* Self clearing - http://www.webtoolkit.info/css-clearfix.html */
-
-.dataTables_wrapper:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-} #
-
-html[xmlns] .dataTables_wrapper {
-	display: block;
-}
-
-* html .dataTables_wrapper {
-	height: 1%;
-}
-
-/* Pagination */
-
-a.paginate_button, a.paginate_active {
-	display: inline-block;
-	background-color: white;
-	padding: 2px 6px;
-	margin-left: 2px;
-	cursor: pointer;
-	*cursor: hand;
-}
-
-a.paginate_active {
-	background-color: transparent;
-	border: 1px solid black;
-}
-
-a.paginate_button_disabled {
-	color: #3d6672;
-}
-
-.paging_full_numbers a:active {
-	outline: none;
-}
-
-.paging_full_numbers a:hover {
-	text-decoration: none,
-}
-
-div.dataTables_paginate span>a {
-	width: 15px;
-	text-align: center;
-}
 
 /*Page format*/
 
-#productstmpl {
-	padding-top: 5em;
-	margin: 0 auto
-}
-
 h1 {
 	text-align: center;
-	color: #228b22;
+	padding-top: 1em;
+	color: white
+}
+
+#productstmpl {
+	padding-top: 5em;
+	margin: 15px;
+	background-color: white;
 }
 
 body {
 	font-family: Verdana, sans-serif;
+
 }
 
 .bordered {
 	width: 75%;
 	margin: 0 auto;
-	border: 2px solid #228b22;
+	border: 2px solid #000099;
 	border-collapse: collapse;
 	padding:0.5em;
 }
@@ -117,22 +42,23 @@ caption {
 }
 
 thead {
-	border-bottom: 2px solid #228b22;
+	border-bottom: 2px solid #000099;
 	padding: 0.25em;
-	background: #228b22;
+	background: #000099;
 	text-transform: uppercase;
 	text-align: center;
+	color: white
 }
 
 tbody tr:nth-child(even){
-		background-color: #00ff00;
+		background-color: #C2E0FF;
 }
 tbody tr:nth-child(odd) {
 	background-color: white
 }
 
 td {
-	border: 1px solid #228b22;
+	border: 1px solid #000099;
 	padding: 0.25em;
 }
 
@@ -144,11 +70,10 @@ td {
 	text-align: center;
 }
 
-p {
-	font-family: Cursive;
-	color: #228b22;
-}
-
 thead th {
 	text-align: center
+}
+
+.bold {
+	font-weight: bold
 }

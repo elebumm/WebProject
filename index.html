@@ -37,6 +37,14 @@
 
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<script>
 	ChangeIt();
 	</script>
@@ -146,10 +154,14 @@
 
 
 <div id="twitbox">  
-<a class="twitter-timeline" href="https://twitter.com/hashtag/SkalezGames" data-widget-id="511361616068083712">#SkalezGames Tweets</a>
+<a class="twitter-timeline" href="https://twitter.com/hashtag/SkalezGames" data-widget-id="511361616068083712">Tweet us at #SkalezGames</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </div>
+<div id="facebook">
+<div class="fb-like-box" data-href="https://www.facebook.com/skalezgames" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+</div>
+
 
 <div id="relative">	
 

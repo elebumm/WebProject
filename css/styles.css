@@ -26,8 +26,6 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
 
 
 #relative {
-	
-	
 	float: right;
 }
 
@@ -37,7 +35,14 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
 #twitbox {
 	position: relative;
 	float: left;
-	
+	display: inline-block;
+	height: 300;
+}
+#facebook {
+	position: relative;
+	float: left;
+	background-color: white;
+
 }
 
 .cover {
@@ -98,6 +103,8 @@ top: 14.9px;
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter {
 color:          grey;
 text-shadow:    none;
+position: relative;
+width: 50%;
 }
 /* Adjust Menu colors - Hover */
 .navbar .nav > li > a:hover, .navbar .nav > li > a:hover:first-letter { 

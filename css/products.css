@@ -1,79 +1,111 @@
-/*Skalez Games products css page*/
+/* CSS for Login page */
 
-
-/*Page format*/
-
-h1 {
-	text-align: center;
-	padding-top: 1em;
-	color: white
-}
-
-#productstmpl {
-	padding-top: 5em;
-	margin: 15px;
-	background-color: white;
-}
-
+/*
 body {
-	font-family: Verdana, sans-serif;
-
+	background-image: url('../img/loginBackground.jpg');
+	background-size: 100%
 }
+*/
 
-.bordered {
-	width: 75%;
-	margin: 0 auto;
-	border: 2px solid #000099;
-	border-collapse: collapse;
-	padding:0.5em;
-}
-
-.centre {
-	text-align: center;
-}
-
-caption {
-	font-weight: bold;
-	font-size: 20px;
+#loginSetup {
+	display: table;
+	list-style-type: none;
+	margin: 10% auto;
+	background-color: white;
+}	
+		
+#left-col {
+	float:left;
+	width: 450px;
 	font-family: Tahoma, sans-serif;
-	text-align: center;
-	padding-bottom: 0.5em;
+	font-size: 16px;
+	padding-left: 1em;
+	padding-top: 5em
+}
+		
+#left-col p {
+	width: 400px
+}
+		
+button {
+	width: 85%;
+	padding: 11px 20px;
+	font-size: 16px;
+	display: block;
+	border: none;
 	color: white
 }
-
-thead {
-	border-bottom: 2px solid #000099;
-	padding: 0.25em;
-	background: #000099;
-	text-transform: uppercase;
+		
+button img {
+	padding-right: 5px;
+}
+		
+#facebook {
+	background-color: #3b5897;
+}
+		
+#twitter {
+	background-color: #00b0eb;
+}
+		
+#google {
+	background-color: #bd0000
+}
+		
+#right-col {
+	float: right;
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+	left: 700px;
+	padding-left: 2em;
+	padding-right: 1em;
+	padding-top: 5em
+}
+		
+#help {
+	margin-bottom: 0;
+	font-size: 12px;
+	color:#e03800;
+	padding-top: 5px;
+	line-height: 18px
+}
+		
+#submitButton {
+	float: right;
+	padding: 9px 16px;
+	min-width: 88px;
+	margin-bottom: 10px;
+	font-size: 14px
+}
+		
+span {
+	color: #e03800;
+}
+		
+#form_username, #form_password{
+	width: 95%;
+	padding: 0.5em;
+	margin-bottom: 9px;
+}
+		
+label {
+	color: #666;
+	line-height: 25px
+}
+		
+#keeplogin label {
+	color: #666;
+	line-height: 25px
+}	
+		
+#create {
+	clear: both;
+	padding-top: 3em;
 	text-align: center;
-	color: white
+	font-family: Tahoma, sans-serif;
+	font-size: 14px;
 }
-
-tbody tr:nth-child(even){
-		background-color: #C2E0FF;
-}
-tbody tr:nth-child(odd) {
-	background-color: white
-}
-
-td {
-	border: 1px solid #000099;
-	padding: 0.25em;
-}
-
-.num {
-	text-align: right;
-}
-
-#price {
-	text-align: center;
-}
-
-thead th {
-	text-align: center
-}
-
-.bold {
-	font-weight: bold
+		
+#create a:link {
+	text-decoration: none;
 }

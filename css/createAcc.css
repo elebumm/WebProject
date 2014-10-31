@@ -1,0 +1,211 @@
+/* CSS for create_account page */
+
+body{
+	background-color: #12007E;
+	background-size: 100%;
+}
+
+.title  {
+	color: white;
+	text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
+}
+
+#background { 
+    position:fixed; left: 0px; 
+    top: 0px; background-size:100%;  
+     width:100%; height:100%; 
+     -webkit-user-select: none; -khtml-user-select: none; 
+     -moz-user-select: none; -o-user-select: none; user-select: none; 
+      z-index:9990; 
+    }
+
+#newreleases {
+	position: absolute;
+	right: 120px;
+	bottom: 255px;
+	color: white;
+	float:right;
+
+}
+
+
+#releasetable {
+	position: absolute;
+	right: 1px;
+	bottom: -64px;
+}
+
+
+#twitbox {
+
+}
+
+.cover {
+  background-image: url('../img/backgrounds/');
+}
+
+.pure-table-odd {
+	color: grey;
+}
+
+
+
+#icons {
+	position: absolute;
+	right: 10px;
+	top: 6px;
+}
+
+.twittertitle {
+	color: white;
+}
+
+
+.jumbotron {
+	color: #FBFBFB;
+}
+
+.slogan  {
+color: white;
+text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
+}
+
+/* Adjust Menu (red) text color, (Garamond) font-family, (1.5em) font-size  */
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+display:        inline;
+color:          red;                        
+font-family:    Garamond;
+font-size:      1.5em;
+padding:        5px 15px;
+top: 14.9px;
+}
+
+.active {
+	background-color: blue;
+}
+
+.navbar-inverse {
+ background-color: #222222
+}
+/* Adjust Menu colors - Normal */
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter {
+color:          grey;
+text-shadow:    none;
+}
+/* Adjust Menu colors - Hover */
+.navbar .nav > li > a:hover, .navbar .nav > li > a:hover:first-letter { 
+color:          white;                      
+text-shadow:    none;
+}
+/* Adjust Menu colors - Active */
+.navbar .nav > li > a:active, .navbar .nav > li > a:active:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a,
+.navbar .nav > li.current-menu-item > a:first-letter, 
+.navbar .nav > li.current-menu-ancestor > a:first-letter {
+color:          blue;
+text-shadow:    none;
+}
+ 
+/* Adjust dropdown Menu items (blue) text color & (yellow) shading */
+.dropdown-menu > li > a {
+color:          blue;
+background:     white;
+}
+ 
+/* Remove the Hover/Focus Colors  */
+.navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a, 
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+color:          #5A5A5A;
+}
+
+
+.loginfixer {
+	color: white;
+}
+
+/* Create account section */
+
+#createAcc {
+		display: table;
+		list-style-type: none;
+		margin: 10% auto;
+		background-color: white;
+}
+
+#left-col {
+			float:left;
+			width: 450px;
+			font-family: Tahoma, sans-serif;
+			font-size: 16px;
+			padding-left: 1em;
+			padding-top: 5em
+}
+		
+button {
+	width: 85%;
+	padding: 11px 20px;
+	font-size: 16px;
+	display: block;
+	border: none;
+	color: white
+}
+		
+button img {
+		padding-right: 5px;
+}
+		
+#facebook {
+		background-color: #3b5897;
+}
+		
+#twitter {
+	background-color: #00b0eb;
+}
+		
+#google {
+	background-color: #bd0000
+}
+
+#right-col {
+			float: right;
+			width: 350px;
+			font-family: Tahoma, sans-serif;
+			font-size: 16px;
+			left: 600px;
+			padding: 5em 1em 1em 1em;
+}
+
+label {
+	font-family: "proxima-nova","Helvetica Neue","HelveticaNeue",Arial,sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	color: #666
+}
+
+span {
+	color: #e03800;
+}
+
+.checkbox {
+	font-family: "proxima-nova","Helvetica Neue","HelveticaNeue",Arial,sans-serif;
+	font-weight: 400;
+}
+
+#submit {
+			float: right;
+			padding: 9px 16px;
+			min-width: 88px;
+			margin-bottom: 10px;
+			font-size: 16px;
+}
+
+.signup {
+	width: 100%;
+	padding: 0.2em;
+	margin-bottom: 9px;
+	border: 1px solid #bfbfbf;
+	border-radius: 3px
+}

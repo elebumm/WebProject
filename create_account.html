@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login - SkalezGames</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme --> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/otherStyles.css">
+	
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/navbar.js"></script>
+	
+</head>
+
+<body>	
+
+   <div id="navbar">
+   	<!-- Navigation bar goes here-->
+   </div>
+
+   <div id="createAcc">
+   		<div id="left-col">
+   			<button id="facebook"><img src="img/facebook_icon.png" alt="facebook">Sign up with Facebook</button><br />
+		   	<button id="twitter"><img src="img/twitter_icon.png" alt="twitter">Sign up with Twitter</button><br />	
+		   	<button id="google"><img src="img/google_icon.png" alt="google+">Sign up with Google</button>		
+   		</div>
+   		<div id="right-col">
+   			<form  action="register.php" autocomplete="on" method="post"> 
+				   <p>Create a new SkalezGames account.</p> 
+				   <label for="fName" class="fname" data-icon="u">First Name <span>*</span></label><br />
+				   <input class="signup" name="fName" required="required" type="text" /><br />
+			     <label for="lName" class="lname" data-icon="u">Last Name <span>*</span></label><br />
+				   <input class="signup" name="lName" required="required" type="text" /><br />				   
+				   <label for="uName" class="uname" data-icon="u">Username <span>*</span></label><br />
+				   <input class="signup" name="uName" required="required" type="text"/><br />
+				   <label for="password" class="youpasswd" data-icon="p">Password <span>*</span></label><br />
+				   <input class="signup" name="password" required="required" type="password"/><br />				 
+				   <label for="password_confirm" class="password" data-icon="p">Confirm Password <span>*</span></label><br />
+				   <input class="signup" name="password_confirm" required="required" type="password" /><br />
+				   <label for="email" class="youmail" data-icon="e" >Email <span>*</span></label><br />
+				   <input class="signup" name="email" required="required" type="email" placeholder="example@domain.com"/><br />
+				   <label>Gender</label><br />
+				   <select name="gender">
+					     <option value="male">Male</option>
+					     <option value="female">Female</option>
+				   </select>     				   
+				   <label for="terms" class="checkbox">
+				   	<input type="checkbox" id="terms" name="policy" required="required"	value="1">
+				   	I have read and agree to the SkalezGames Terms of Use and Privacy Policy
+				   </label>
+				   <label for="subscribe" class="checkbox">
+				   	<input type="checkbox" id="subscribe" name="newsletter" value="1">
+				   	I would like to receive totally sweet emails from SkalezGames 	
+				   </label>				   
+				    <p> 
+				    	<input type="submit" id = "submit" name="submit" value="Create Account"/> 
+				    </p>
+				</form>	
+   		</div>
+   
+   </div>
+     
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</html>

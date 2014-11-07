@@ -1,20 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-	<title>Register a user</title>
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-	<!--
-	Title: SkalezGames
-	Version: 2.0
-	Date: Oct 31, 2014
-	-->
-</head>
-<body>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="0;url=../index.html">
 	
+	<script language="javascript">
+		window.location.href = "../index.html"
+	</script>
+	
+	<title>Loading</title>
+		
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme --> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/navbar.js"></script>
+	
+	<!-- CSS for login section -->
+	<link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
 <?php
 
 // Create connection
-$con=mysqli_connect("localhost", "Scott", "hello", "skalez_games");
+$con=mysqli_connect("localhost", "root", "", "skalez_games");
 
 // Check connection
 if (mysqli_connect_errno()) {
@@ -22,76 +49,50 @@ if (mysqli_connect_errno()) {
 }
 
 
+	//TODO: Add Validation for Password and email regex.
 	$firstName = $_POST['fName'];
 	$lastName = $_POST['lName'];
 	$userName = $_POST['uName'];
-	$password = $_POST['password']; //MD5 this
-	$passwordConfirm = $_POST['password_confirm'];//MD5 this
+	$password = md5($_POST['password']);
+	$passwordConfirm = md5($_POST['password_confirm']);
 	$email = $_POST['email'];
 	$gender = $_POST['gender'];
+	$newsletter = $_POST['newsletter'];
+	$auth = "member";
 	
-	mysqli_query($con,"INSERT INTO users (FirstName, LastName, UserName, Password, Email, Gender)
-	VALUES ('$firstName', '$lastName' , '$userName' , '$password', '$email' , '$gender')");
+	$sql = "SELECT username, password FROM users WHERE username = '$userName'";
+	$result = $con->query($sql);
 	
-	echo "Record added";
 
+    // output data of each row
+        $row = $result->fetch_assoc();
+		if ($row['username'] == $userName)
+		{
+			// Prevents Duplicate Usernames.
+			// TODO: Handle Error
+	
+		}
+		else
+		{
+			mysqli_query($con,"INSERT INTO users (FirstName, LastName, UserName, Password, Email, Gender, privilege, get_emails)
+			VALUES ('$firstName', '$lastName' , '$userName' , '$password', '$email' , '$gender', '$auth', '$newsletter')");
+			
+			echo "Registration Successful";
+			
+			$to      = $email;;
+			$subject = 'SkalezGames Email Verification';
+			$message = 'TEST';
+			$headers = 'From: no-reply@skalezgames.com' . "\r\n" .
+			'Reply-To: no-reply@skalezgames.com' . "\r\n" .
+			'X-Mailer: PHP/' . phpversion();
 
+			mail($to, $subject, $message, $headers);
+		}
+ 
+	
+	
 	mysqli_close($con);
-	
-/* An alternative code
-	$ShowForm = FALSE;
-$fields = array('fName', 'lName', 'uName', 'password_confirm', 'email', 'gender');
-$report = array();
-foreach ($fields as $field)
-     $report[$field]="";
-if (isset($_POST['submit'])) {
-     foreach ($fields as $field) {
-          if ((!isset($_POST[$field])) || (strlen(trim(($_POST[$field])))==0)) {
-               echo "<p>'$field' is a required field.</p>\n";
-               $ShowForm=TRUE;
-          }
-          else {
-               $report[$field]=stripslashes(trim($_POST[$field]));
-          }
-     }
-     if ($ShowForm===FALSE) {
-          $DBConnect = @mysql_connect("http://72.167.233.112", "team04project", "Pass4team04!");
-          if ($DBConnect === FALSE)
-               echo "<p>Unable to connect to the database server.</p>\n" . "<p>Error code " . mysql_errno()
-                  . ": " . mysql_error() . "</p>\n";
-          else {
-               $DBName = "team04project";
-               if (!@mysql_select_db($DBName, $DBConnect))
-                    echo "<p>Unable to connect to the $DBName database!</p>";
-               else {
-                    $TableName = "user";
-                    $fieldstr="";
-                    $valuestr="";
-                    $connector="";
-                    foreach ($fields as $field) {
-                         $fieldstr .= $connector . $field;
-                         $valuestr .= $connector . "'" . $report[$field] . "'";
-                         $connector=", ";
-                    }
-                    $SQLString = "INSERT INTO $TableName (" . $fieldstr .
-                         ") VALUES ($valuestr)";
-                    $QueryResult = @mysql_query($SQLString, $DBConnect);
-                    if ($QueryResult === FALSE)
-                         echo "<p>There was an error saving the record.<br />\n" .
-                              "The error was " . htmlentities(mysql_error($DBConnect)) .
-                              ".<br />\nThe query was '" .  htmlentities($SQLString) . "'</p>\n";
-                    else {
-                         echo "<p>You are now registered.</p>\n";
-                    }
-               }
-          }
-     }
-}
-else {
-     $ShowForm=TRUE;
-}
 
-*/
+
+
 ?>
-</body>
-</html>

@@ -9,10 +9,10 @@ Date: Oct 31, 2014
 /* CSS for Login page */
 
 
-body {
-	
+body{
+	background-color: #12007E;
+	background-size: 100%;
 }
-
 
 #loginSetup {
 			display: table;

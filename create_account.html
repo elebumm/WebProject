@@ -34,9 +34,9 @@ Date: Oct 31, 2014
 
    <div id="createAcc">
    		<div id="left-col">
-   			<button id="facebook"><img src="img/facebook_icon.png" alt="facebook">Sign up with Facebook</button><br />
-		   	<button id="twitter"><img src="img/twitter_icon.png" alt="twitter">Sign up with Twitter</button><br />	
-		   	<button id="google"><img src="img/google_icon.png" alt="google+">Sign up with Google</button>		
+   			<a href="https://www.facebook.com/" target="_blank"><button id="facebook"><img src="img/facebook_icon.png" alt="facebook">Sign up with Facebook</button></a><br />
+		   	<a href="https://twitter.com/" target="_blank"><button id="twitter"><img src="img/twitter_icon.png" alt="twitter">Sign up with Twitter</button></a><br />	
+		   	<a href="https://plus.google.com/" target="_blank"><button id="google"><img src="img/google_icon.png" alt="google+">Sign up with Google</button></a>		
    		</div>
    		<div id="right-col">
    			<form  action="register.php" autocomplete="on" method="post"> 
@@ -57,11 +57,11 @@ Date: Oct 31, 2014
 				   <select name="gender">
 					     <option value="male">Male</option>
 					     <option value="female">Female</option>
-				   </select>     				   
-				   <label for="terms" class="checkbox">
-				   	<input type="checkbox" id="terms" name="policy" required="required"	value="1">
-				   	I have read and agree to the SkalezGames Terms of Use and Privacy Policy
-				   </label>
+				   </select>
+				   	<label for="terms" class="checkbox">	
+				   		<input type="checkbox" id="terms" name="policy" required="required"	value="1">     				   					   			   	
+					   	I have read and agree to the SkalezGames Terms of Use and Privacy Policy
+					  </label> 
 				   <label for="subscribe" class="checkbox">
 				   	<input type="checkbox" id="subscribe" name="newsletter" value="1">
 				   	I would like to receive totally sweet emails from SkalezGames 	

@@ -50,13 +50,14 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
 	position: relative;
 	float: left;
 	display: inline-block;
-	height: 300;
+	height: 300px;
 }
 #facebook {
 	position: relative;
 	float: left;
 	background-color: white;
 	top: 48px;
+	height: 200px;
 }
 
 .cover {

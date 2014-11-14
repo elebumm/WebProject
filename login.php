@@ -1,4 +1,12 @@
 <?php
+	session_start();
+	header('Refresh: 3; URL=user_page.php');
+?>
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
@@ -23,8 +31,11 @@
         echo $row["username"] . "<br>";
 		if (md5($password) == $row["password"])
 		{
-			echo "Authenticated";
+			echo "Login Successful";
 			//TODO: Login Successful
+			
+			$_SESSION['username'] = $userName;
+			$_SESSION['logged_in'] = TRUE;
 		}
     }
 
@@ -32,3 +43,6 @@
 		
 
 ?>
+
+</body>
+</html>

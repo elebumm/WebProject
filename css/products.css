@@ -13,7 +13,16 @@ Date: Oct 31, 2014
 
 /*Page format*/
 
+#productsTable{
+	position: relative;
 
+}
+
+#tableHead {
+	font-size: 10px;
+	text-align: center;
+	
+}
 
 h1 {
 	text-align: center;

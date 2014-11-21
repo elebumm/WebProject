@@ -51,6 +51,7 @@ Date: Oct 31, 2014
    $fields_num = mysqli_num_fields($sql);
 
    echo "<table id='productsTable' align='center'> <tr> 
+   <th scope='col' class='tableHead'>Picture</th>
    <th scope='col' class='tableHead'>Title</th>
 	<th scope='col' class='tableHead'>Platform</th>
 	<th scope='col' class='tableHead'>Language</th>
@@ -63,7 +64,7 @@ Date: Oct 31, 2014
 
 while($res = mysqli_fetch_array($sql))
  {
-	echo "<tr><td>" . $res['title'] . "</td><td>" . $res['platform'] . "</td><td>" . $res['glanguage'] . "</td><td>" . $res['developer'] . "</td><td>" . $res['publisher'] . "</td><td>" . $res['rating'] . "</td><td>" . $res['genre'] . "</td><td>" . $res['price'] . "</td></tr>"; 
+	echo "<tr><td><img src='" . $res['picture_link'] .  "' width='80px' height='100px'></td><td>" . $res['title'] . "</td><td>" . $res['platform'] . "</td><td>" . $res['glanguage'] . "</td><td>" . $res['developer'] . "</td><td>" . $res['publisher'] . "</td><td>" . $res['rating'] . "</td><td>" . $res['genre'] . "</td><td>" . $res['price'] . "</td></tr>"; 
 }
  echo "</table>";
 

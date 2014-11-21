@@ -155,7 +155,7 @@ color:          #5A5A5A;
 #content {
 	background-color: white;
 	padding: 2em;
-	margin: 3em auto;
+	margin: 0 auto;
 	width: 80%
 }
 	

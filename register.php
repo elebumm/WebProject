@@ -7,7 +7,7 @@
 	<meta http-equiv="refresh" content="0;url=../index.html">
 	
 	<script language="javascript">
-		window.location.href = "../index.html"
+		window.location.href = "index.html"
 	</script>
 	
 	<title>Loading</title>

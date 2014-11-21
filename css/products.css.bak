@@ -59,7 +59,7 @@ caption {
 	text-transform: uppercase;
 	text-align: center;
 	color: white;
-	font-size: 15px;
+	font-size: 10px;
 }
 
 tbody tr:nth-child(even){

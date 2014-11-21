@@ -10,6 +10,7 @@
 	<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
 	<link rel="stylesheet" href="css/carousel.css">
 	<link rel="stylesheet" href="css/carousel-style.css">
+	<link rel="stylesheet" href="css/mobileLogin.css">
 </head>
 <body>
 	<!-- HOME PAGE -->
@@ -29,8 +30,8 @@
 		<!-- carousel area -->
 		
 		<section data-role="content">
-			<h4>Computer & Video Games | Best Sellers | New & Future Releases | Deals </h4>
-			<p>Popular on SkalezGames</p>
+			<h4>Computer &amp; Video Games | Best Sellers | New &amp; Future Releases | Deals </h4>
+			<h4>Popular on SkalezGames</h4>
 			<section class="ui-grid-a">
 				<div class="ui-block-a">					
 					<a href="#games">
@@ -528,27 +529,18 @@
 				</ul>
 			</div>
 		</div>
-		<div id="edit_account">
-			<form action="edit_account.php" method="post">
-				<h2>Edit Account Info</h2>
-				<label for="firstName">First Name: </label>
-				<input name="firstName" type="text">
-				<label for="lastName">Last Name: </label>
-				<input name="lastName" type="text">
-				<label for="email">Email: </label>
-				<input name="email" type="email">
-				<input type="submit" id = "submit" name="submit" value="Edit Account"> 				
-			</form>
-			
-			<form action="edit_password.php" method="post">
-				<h2>Change Password</h2>				
-				<label for="oldPassword">Enter Old Password: </label>
-				<input name="oldPassword" type="password">
-				<label for="newPassword">Enter New Password: </label>
-				<input name="newPassword" type="password">
-				<input type="submit" id = "submit" name="submit" value="Edit Password"> 			
-			</form>
-		</div>
+		<h2>Log In</h2>
+		<form action="login.php" method="post" id="login">
+			<button id="facebook"><img src="img/facebook_icon.png" alt="facebook">Log in with Facebook</button>
+		  <button id="twitter"><img src="img/twitter_icon.png" alt="twitter">Log in with Twitter</button>
+		  <button id="google"><img src="img/google_icon.png" alt="google+">Log in with Google</button>
+		  <br />
+		  <label for="username">Username <span>*</span></label>
+		  <input type="text" id="username" name="username" require="required" />
+		  <label for="password">Password <span>*</span></label>
+		  <input type="password" id="password" name = "password" require="required" />
+		  <input type="submit" value="Log in" id="submitButton"/>	
+		</form>
 	</div>
 	
 	<!-- include zepto.js or jquery.js -->

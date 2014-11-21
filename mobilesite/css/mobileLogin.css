@@ -1,0 +1,25 @@
+﻿/*CSS for mobile site login page*/
+
+form {
+	padding: 0.5em
+}
+
+#facebook {
+		background-color: #3b5897;
+}
+		
+#twitter {
+	background-color: #00b0eb;
+}
+		
+#google {
+	background-color: #bd0000;
+}
+
+span {
+	color: #e03800;
+}
+
+#login button {
+	color: white
+}

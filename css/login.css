@@ -89,7 +89,7 @@ button img {
 			color: #e03800;
 		}
 		
-		#form_username, #form_password{
+		#username, #password{
 			width: 95%;
 			padding: 0.5em;
 			margin-bottom: 9px;

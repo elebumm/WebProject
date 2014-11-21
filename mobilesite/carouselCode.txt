@@ -1,0 +1,36 @@
+﻿<!-- include carousel.css -->
+
+			<h1 class="ui-title">Welcome to Skalez Games!</h1>
+			<!-- the viewport -->
+			<div class="m-carousel m-fluid m-carousel-photos">
+			  <!-- the slider -->
+			  <div class="m-carousel-inner">
+			    <!-- the items -->
+			    <div class="m-item m-active">
+			      <img src="img/1.jpg">
+			    </div>
+			    <div class="m-item">
+			      <img src="img/2.jpg">
+			    </div>
+			    <div class="m-item">
+			      <img src="img/3.jpg">
+			    </div>
+			  </div>
+			  <!-- the controls -->
+			  <div class="m-carousel-controls m-carousel-bulleted">
+			    <a href="#" data-slide="prev">Previous</a>
+			    <a href="#" data-slide="1" class="m-active">1</a>
+			    <a href="#" data-slide="2">2</a>
+			    <a href="#" data-slide="3">3</a>
+			    <a href="#" data-slide="next">Next</a>
+			  </div>
+			</div>
+
+			<!-- include zepto.js or jquery.js -->
+			<script src="JS/jquery-1.11.1.min.js"></script>
+			<!-- include carousel.js -->
+			<script src="JS/carousel.js"></script>
+			<!-- construct the carousel -->
+			<script>$('.m-carousel').carousel()</script>
+		
+		<!-- end carousel -->

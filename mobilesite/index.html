@@ -12,65 +12,90 @@
 	<link rel="stylesheet" href="css/carousel-style.css">
 </head>
 <body>
-
+	<!-- HOME PAGE -->
 	<div data-role="page" href="#home" data-url="home" data-theme="a">
 		<div data-role="header" style="overflow:hidden;">
-		<h1>Skalez Games</h1>
-		    <a href="#signup" data-icon="gear" class="ui-btn-right">Sign Up</a>
-		    <div data-role="navbar">
-		        <ul>
-		            <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-		            <li><a href="#games" data-icon="shop">Games</a></li>
-		            <li><a href="#about" data-icon="info">About</a></li>
+			<h1>Skalez Games</h1>
+			<a href="#signup" data-icon="gear" class="ui-btn-right">Sign Up</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+					<li><a href="#games" data-icon="shop">Games</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
 					<li><a href="#Account" data-icon="user">Account</a></li>
-		        </ul>
-		    </div><!-- /navbar -->
+				</ul>
+			</div><!-- /navbar -->
 		</div>
-		<div data-role="content" data-theme="a">
-			<!-- include carousel.css -->
-
-			<h1 class="ui-title">Welcome to Skalez Games!</h1>
-			<!-- the viewport -->
-			<div class="m-carousel m-fluid m-carousel-photos">
-			  <!-- the slider -->
-			  <div class="m-carousel-inner">
-			    <!-- the items -->
-			    <div class="m-item m-active">
-			      <img src="img/1.jpg">
-			    </div>
-			    <div class="m-item">
-			      <img src="img/2.jpg">
-			    </div>
-			    <div class="m-item">
-			      <img src="img/3.jpg">
-			    </div>
-			  </div>
-			  <!-- the controls -->
-			  <div class="m-carousel-controls m-carousel-bulleted">
-			    <a href="#" data-slide="prev">Previous</a>
-			    <a href="#" data-slide="1" class="m-active">1</a>
-			    <a href="#" data-slide="2">2</a>
-			    <a href="#" data-slide="3">3</a>
-			    <a href="#" data-slide="next">Next</a>
-			  </div>
-			</div>
-
-			<!-- include zepto.js or jquery.js -->
-			<script src="JS/jquery-1.11.1.min.js"></script>
-			<!-- include carousel.js -->
-			<script src="JS/carousel.js"></script>
-			<!-- construct the carousel -->
-			<script>$('.m-carousel').carousel()</script>
-		</div>
+		<!-- carousel area -->
+		
+		<section data-role="content">
+			<h4>Computer & Video Games | Best Sellers | New & Future Releases | Deals </h4>
+			<p>Popular on SkalezGames</p>
+			<section class="ui-grid-a">
+				<div class="ui-block-a">					
+					<a href="#games">
+						<img src="img/CP103.jpg" title="BioShock Infinite" alt="BioShock Infinite" width="230"/>
+						<p>BIOSHOCK INFINITE for PC<br />
+							Available now</p>
+					</a>
+					<a href="#games">
+						<img src="img/NO101.jpg" title="Bayonetta 2" alt="Bayonetta 2" width="230"/>
+						<p>Bayonetta 2<br />
+						   Shop now</p>
+					</a>
+					<a href="#games">
+						<img src="img/PS103.jpg" title="GTA V" alt="GTA V" width="230"/>
+						<p>Grand Theft Auto V<br />
+						   Available now</p>
+					</a>
+					<a href="#games">
+						<img src="img/NO107.jpg" title="Super Smash Bros." alt="Super Smash Bros." width="230"/>
+						<p>Super Smash Bros.<br />
+						   Available now</p>	
+					</a>
+					<a href="#games">
+						<img src="img/bloodborne.jpg" title="Bloodborne" alt="Bloodborne" width="230"/>
+						<p>Bloodborne<br />
+						   Pre-order now</p>
+					</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#games">
+						<img src="img/PS109.jpg" title="Assassin's Creed Unity" alt="Assassin's Creed Unity" width="230"/>
+						<p>Assassin's Creed Unity<br />
+							Order now</p>
+					</a>
+					<a href="#games">
+						<img src="img/XB105.jpg" title="Diablo" alt="Diablo" width="230"/>
+						<p>Diablo: Reaper of Souls<br />
+						   Get it now</p>
+					</a>
+					<a href="#games">
+						<img src="img/PS115.jpg" title="Final Fantasy X" alt="Final Fantasy X" width="230"/>
+						<p>Final Fantasy X|X-2<br />
+						   Available now</p>
+					</a>
+					<a href="#games">
+						<img src="img/XB111.jpg" title="Batman Arkham Knight" alt="Batman Arkham Knight" width="230"/>
+						<p>Batman: Arkham Knight<br />
+						   Buy now</p>
+					</a>
+					<a href="#games">
+						<img src="img/NO113.jpg" title="Animal Crossing" alt="Animal Crossing" width="230"/>
+						<p>Animal Crossing<br />
+						   Shop now</p>
+					</a>
+				</div>
+			</section>
+		</section>
+			
 	</div>
-	
-	
 	
 	<!-- ABOUT -->
 	<div data-role="page" href="#about" data-url="about" data-theme="a">
 		<div data-role="header" style="overflow:hidden;">
-		<h1>Skalez Games</h1>
-		    <a href="#" data-icon="gear" href="signup"class="ui-btn-right">Sign Up</a>
+			<h1>Skalez Games</h1>
+		    <a href="#signup" data-icon="gear" href="signup" class="ui-btn-right">Sign Up</a>
 		    <div data-role="navbar">
 		        <ul>
 		            <li><a href="#home" data-icon="home">Home</a></li>
@@ -81,17 +106,17 @@
 		    </div><!-- /navbar -->
 		</div>
 		<div data-role="content" data-theme="a">
-			<h1>About Us!</h1>
-			<p>We are Skalez Games. We are 3 students at Lambton College developing a mock website for a video game retailer. We are located at Lambton College at N208 coding our lives away.
-			  </div>
+			<h1>Who are we?</h1>
+			<p>We are Skalez Games. We are 3 students at Lambton College developing a mock website for a video game retailer. We are located at Lambton College at N208 coding our lives away.</p>
+		</div>
 			 
-			 			</div>
+	</div>
 
 
-	<!-- GAMES -->
+	<!-- GAMES PAGE -->
 	<div data-role="page" href="#games" data-url="games" data-theme="a">
 		<div data-role="header" style="overflow:hidden;">
-		<h1>Skalez Games</h1>
+			<h1>Skalez Games</h1>
 		    <a href="#signup" data-icon="gear" class="ui-btn-right">Sign Up</a>
 		    <div data-role="navbar">
 		        <ul>
@@ -186,20 +211,17 @@
 			         <td>Racing</td>
 			       </tr>
 			     </tbody>
-			   </table>
-			
-			
-			
-			  </div>
+			</table>			
+		</div>
 			 
-			 			</div>
+	</div>
 
 
 
-
+	<!--SIGN UP PAGE -->
 	<div data-role="page" href="#signup" data-url="signup" data-theme="a">
 		<div data-role="header" style="overflow:hidden;">
-		<h1>Skalez Games</h1>
+			<h1>Skalez Games</h1>
 		    <a href="#" data-icon="gear" class=" ui-btn-active ui-btn-right">Sign Up</a>
 		    <div data-role="navbar">
 		        <ul>
@@ -220,15 +242,15 @@
 			<input type="date" name="date" id="date" value="">
 			<fieldset data-role="controlgroup">
 			    <legend>Are you a:</legend>
-			        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
-			        <label for="radio-choice-1">Customer</label>
-			        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
-			        <label for="radio-choice-2">Business</label>
-			        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
-			        <label for="radio-choice-3">Investor</label>
-					</fieldset>
-					<label for="text-basic">Country:</label>
-					<select name="select-choice-1" id="select-choice-1">
+			    <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+			    <label for="radio-choice-1">Customer</label>
+			    <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+			    <label for="radio-choice-2">Business</label>
+			    <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+			    <label for="radio-choice-3">Investor</label>
+			</fieldset>
+			<label for="text-basic">Country:</label>
+				<select name="select-choice-1" id="select-choice-1">
 					<legend>Country</legend>
 					<option value="">Country...</option>
 					<option value="AF">Afghanistan</option>
@@ -478,7 +500,7 @@
 					<option value="ZR">Zaire</option>
 					<option value="ZM">Zambia</option>
 					<option value="ZW">Zimbabwe</option>
-					</select>
+				</select>
 			<label for="text-basic">City:</label>
 			<input type="text" name="text-basic" id="text-basic" value="">
 			<label for="text-basic">Postal Code:</label>
@@ -486,22 +508,54 @@
 			
 			<a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Submit</a>
 			<div data-role="popup" id="popupBasic">
-			<p>Thank you for signing up to Skalez Games!</p>
+				<p>Thank you for signing up to Skalez Games!</p>
 			</div>
-			  </div>
-			  
-			 
-			 			</div>
+		</div>			  			 
+	</div>
 
-
-
-			<!-- include zepto.js or jquery.js -->
-			<script src="JS/jquery-1.11.1.min.js"></script>
-			<!-- include carousel.js -->
-			<script src="JS/carousel.js"></script>
-			<!-- construct the carousel -->
-			<script>$('.m-carousel').carousel()</script>
+	<!-- ACCOUNT PAGE -->
+	<div data-role="page" href="#Account" data-url="Account" data-theme="a">
+		<div data-role="header" style="overflow:hidden;">
+			<h1>Skalez Games</h1>			
+			<a href="#signup" data-icon="gear" class="ui-btn-right">Sign Up</a>
+			<!-- /navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#games" data-icon="shop">Games</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#Account" class="ui-btn-active" data-icon="user">Account</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="edit_account">
+			<form action="edit_account.php" method="post">
+				<h2>Edit Account Info</h2>
+				<label for="firstName">First Name: </label>
+				<input name="firstName" type="text">
+				<label for="lastName">Last Name: </label>
+				<input name="lastName" type="text">
+				<label for="email">Email: </label>
+				<input name="email" type="email">
+				<input type="submit" id = "submit" name="submit" value="Edit Account"> 				
+			</form>
+			
+			<form action="edit_password.php" method="post">
+				<h2>Change Password</h2>				
+				<label for="oldPassword">Enter Old Password: </label>
+				<input name="oldPassword" type="password">
+				<label for="newPassword">Enter New Password: </label>
+				<input name="newPassword" type="password">
+				<input type="submit" id = "submit" name="submit" value="Edit Password"> 			
+			</form>
 		</div>
 	</div>
+	
+	<!-- include zepto.js or jquery.js -->
+	<script src="JS/jquery-1.11.1.min.js"></script>
+	<!-- include carousel.js -->
+	<script src="JS/carousel.js"></script>
+	<!-- construct the carousel -->
+	<script>$('.m-carousel').carousel()</script>
 </body>
 </html>

@@ -62,7 +62,7 @@ caption {
 	color: white
 }
 
-thead {
+tableHead {
 	border-bottom: 2px solid #000099;
 	padding: 0.25em;
 	background: #000099;

@@ -7,8 +7,6 @@
 
 <body>
 
-
-
 <?php
 
 	$servername = "localhost";
@@ -23,12 +21,15 @@
 		die("Connection failed: " . $conn->connect_error);
 	} 
 	
-	$username = $_SESSION['username'];
-	$firstName = $_POST['firstName'];
-	$lastName = $_POST['lastName']; 
-	$email = $_POST['email']; 
+	$userName = $_SESSION['username'];	
+	$email = $_POST['email'];
+	if ( $_POST['newPassword'] == 0)
+		$newPassword = md5($_POST['oldPassword']);
+	else	
+		$newPassword = md5($_POST['newPassword']); 
 
-	$sql = "UPDATE users SET FirstName='$firstName', LastName = '$lastName', Email = '$email' WHERE UserName = '$username'";
+	$sql = "UPDATE users SET Email = '$email', Password = '$newPassword'
+			WHERE UserName = '$userName'";
 
 	if (mysqli_query($conn, $sql)) {
 		echo "Account updated successfully";

@@ -44,7 +44,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="user_page.php">View Profile</a></li>
-				<li><a href="logout.php">Logout</a></li>
+						<li><a href="logout.php">Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -74,57 +74,41 @@
 		die("Connection failed: " . $conn->connect_error);
 	} 
 	
-	$username1 = $_SESSION['username'];
+	$userName = $_SESSION['username'];
 	
-	$sql = "SELECT FirstName, Lastname, username, password, email, gender FROM users WHERE username = '$username1'";
+	$sql = "SELECT FirstName, Lastname, userName, password, email, gender FROM users WHERE username = '$userName'";
 	$result = $conn->query($sql);
 	
 	
 	// output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "Username: " . $row["username"] . "<br>";
-		echo "First Name: " . $row["FirstName"] . "<br>";
-		echo "Last Name: " . $row["Lastname"] . "<br>";
-		echo "Email: " . $row["email"] . "<br>";
-		echo "Gender: " . $row["gender"] . "<br>";
-
+    while($row = $result->fetch_assoc()) {       
+				?>
+				<div id="edit_account">
+					<form action="edit_account.php" method="post">
+					<h2>Edit Account Info</h2>
+					<p>Username: <?php echo $row["userName"]; ?></p>
+					<p>First Name: <?php echo $row["FirstName"]; ?></p>
+					<p>Last Name: <?php echo $row["Lastname"]; ?></p>
+					<p>Gender: <?php echo $row["gender"]; ?></p>
+					<label for="email">Email: </label>
+					<input name="email" type="email" value="<?php echo $row["email"]; ?>" ><br />
+					<label for="oldPassword">Old Password: </label>
+					<input name="oldPassword" type="password">
+					<br>
+					<label for="newPassword">New Password: </label>
+					<input name="newPassword" type="password">
+					<br>					
+					<input type="submit" id = "submit" name="submit" value="Edit Account"/> 
+			
+					</form>
+				</div>	
+				<?php
     }
 
 	$conn->close();
 	
-
 ?>
-<br>
-<div id="edit_account">
-	<form action="edit_account.php" method="post">
-		<h2>Edit Account Info</h2>
-		<label for="firstName">First Name: </label>
-		<input name="firstName" type="text">
-		<br>
-		<label for="lastName">Last Name: </label>
-		<input name="lastName" type="text">
-		<br>
-		<label for="email">Email: </label>
-		<input name="email" type="email">
-		<br>
-		<input type="submit" id = "submit" name="submit" value="Edit Account"/> 
-		
-	</form>
-	
-	<form action="edit_password.php" method="post">
-		<h2>Change Password</h2>
-		
-		<label for="oldPassword">Enter Old Password: </label>
-		<input name="oldPassword" type="password">
-		<br>
-		<label for="newPassword">Enter New Password: </label>
-		<input name="newPassword" type="password">
-		<br>
-		<input type="submit" id = "submit" name="submit" value="Edit Password"/> 
-	
-	</form>
 
-</div>
 </section>
 </body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

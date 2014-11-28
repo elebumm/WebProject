@@ -158,4 +158,13 @@ color:          #5A5A5A;
 	margin: 3em auto;
 	width: 80%
 }
+
+#content h1 {
+	text-align: center;
+	color: #12007E;
+}	
+
+#content h3 {
+	font-weight: bold;
+}
 	

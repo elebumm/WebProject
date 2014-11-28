@@ -9,9 +9,10 @@ Date: Oct 31, 2014
 
 
 body{
-	background-color: #12007E;
+	background-color: #12107E;
 	background-size: 100%;
 }
+
 .title  {
 color: white;
 text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
@@ -57,7 +58,6 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
 	float: left;
 	background-color: white;
 	top: 48px;
-	height: 200px;
 }
 
 .cover {

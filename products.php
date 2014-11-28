@@ -24,6 +24,7 @@ Date: Oct 31, 2014
 	<!--Products css-->	
 	<link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.css">
 	<link href="css/products.css" rel="stylesheet">
+	<link href="css/background.css" rel="stylesheet">
 	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

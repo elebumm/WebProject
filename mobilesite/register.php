@@ -1,4 +1,4 @@
-ww<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@ ww<!DOCTYPE html>
 	<meta http-equiv="refresh" content="0;url=../index.html">
 	
 	<script language="javascript">
-		window.location.href = "index.html"
+		window.location.href = "../index.html"
 	</script>
 	
 	<title>Loading</title>
@@ -77,7 +77,7 @@ if (mysqli_connect_errno()) {
 			mysqli_query($con,"INSERT INTO users (FirstName, LastName, UserName, Password, Email, Gender, privilege, get_emails)
 			VALUES ('$firstName', '$lastName' , '$userName' , '$password', '$email' , '$gender', '$auth', '$newsletter')");
 			
-			echo "Registration Successful";
+			echo "Registration Successful. Redirecting you back to Skalez Games.";
 			
 			$to      = $email;;
 			$subject = 'SkalezGames Email Verification';

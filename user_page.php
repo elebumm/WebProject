@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
+	<link href="css/background.css" rel="stylesheet">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	
@@ -44,7 +44,6 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="user_page.php">View Profile</a></li>
-                <li><a href="#">View Cart</a></li>
 				<li><a href="logout.php">Logout</a></li>
               </ul>
             </li>
@@ -75,9 +74,9 @@
 		die("Connection failed: " . $conn->connect_error);
 	} 
 	
-	$username = $_SESSION['username'];
+	$username1 = $_SESSION['username'];
 	
-	$sql = "SELECT FirstName, Lastname, username, password, email, gender FROM users WHERE username = '$username'";
+	$sql = "SELECT FirstName, Lastname, username, password, email, gender FROM users WHERE username = '$username1'";
 	$result = $conn->query($sql);
 	
 	

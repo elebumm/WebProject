@@ -32,17 +32,6 @@ Date: Oct 31, 2014
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<!--Navbar js-->
 	<script src="js/navbar.js"></script>
-
-	<!-- jQuery -->	
-	<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
-	<script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.js"></script>
-	
-	<script>
-		$(document).ready(function() {
-	    $('#productsTable').dataTable();
-		} );
-	</script>	
-	
 </head>
 
 <body>
@@ -62,7 +51,7 @@ Date: Oct 31, 2014
 
    $fields_num = mysqli_num_fields($sql);
 
-   echo "<table id='productsTable' align='center'> <tr> 
+   echo "<table id='productsTable'> <tr> 
    <th scope='col' colspan='2' class='tableHead'>Title</th>
 	<th scope='col' class='tableHead'>Platform</th>
 	<th scope='col' class='tableHead'>Language</th>
@@ -75,7 +64,7 @@ Date: Oct 31, 2014
 
 while($res = mysqli_fetch_array($sql))
  {
-	echo "<tr><td><img src='" . $res['picture_link'] .  "' width='80px' height='100px'></td><td class='bold'>" . $res['title'] . "</td><td class='centre'>" . $res['platform'] . "</td><td>" . $res['glanguage'] . "</td><td>" . $res['developer'] . "</td><td>" . $res['publisher'] . "</td><td class='centre'>" . $res['rating'] . "</td><td>" . $res['genre'] . "</td><td class='bold'>" . $res['price'] . "</td></tr>"; 
+	echo "<tr><td><img src='" . $res['picture_link'] .  "' width='80' height='100' alt='game'></td><td class='bold'>" . $res['title'] . "</td><td class='centre'>" . $res['platform'] . "</td><td>" . $res['glanguage'] . "</td><td>" . $res['developer'] . "</td><td>" . $res['publisher'] . "</td><td class='centre'>" . $res['rating'] . "</td><td>" . $res['genre'] . "</td><td class='bold'>" . $res['price'] . "</td></tr>"; 
 }
  echo "</table>";
 

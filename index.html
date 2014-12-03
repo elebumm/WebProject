@@ -24,199 +24,193 @@ Date: Oct 31, 2014
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/navbar.js"></script>
 	<script type="text/javascript"> 
-	var totalCount = 6;
-	function ChangeIt() 
-	{
-	var num = Math.ceil( Math.random() * totalCount );
-	document.body.background = 'img/backgrounds/'+num+'.jpg';
-	document.body.style.backgroundSize = "cover";// Background repeat
-	}
+		var totalCount = 6;
+		function ChangeIt() 
+		{
+			var num = Math.ceil( Math.random() * totalCount );
+			document.body.background = 'img/backgrounds/'+num+'.jpg';
+			document.body.style.backgroundSize = "cover";// Background repeat
+		}
 	</script>
 	<script type="text/javascript">
-  <!--
-  if (screen.width <= 800) {
-    window.location = "localhost/mobilesite/index.php";
-  }
-  //-->
-</script>
+	  <!--
+	  if (screen.width <= 800) {
+	    window.location = "localhost/mobilesite/index.php";
+	  }
+	  //-->
+	</script>
 
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="fb-root"></div>
 	<script>
-	ChangeIt();
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
 	</script>
-   <div id="navbar">
-			<!--Navigation bar goes here -->   
-   </div>
-   <div class="container">
-
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-		  </ol>
-
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-			<div class="item active">
-			<div style="background:url(img/slide1.jpg) center center; 
-          background-size:cover;" class="slider-size">
-			  <div class="carousel-caption">
-				<h3 class="title">Microsoft buys Mojang for 2.5 billion.</h3>
-				<p class="slogan">Microsoft is interested in the success of Minecraft.</p>
-			  </div>
-			</div>
+	<script>
+		ChangeIt();
+	</script>
+	<div id="navbar">
+		<!--Navigation bar goes here -->   
+	</div>
+	<div class="container">
+	
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			  </ol>
+	
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+				<div class="item active">
+				<div style="background:url(img/slide1.jpg) center center; 
+	          background-size:cover;" class="slider-size">
+				  <div class="carousel-caption">
+					<h3 class="title">Microsoft buys Mojang for 2.5 billion.</h3>
+					<p class="slogan">Microsoft is interested in the success of Minecraft.</p>
+				  </div>
+				</div>
+				</div>
+				<div class="item">
+				  <div style="background:url(img/slide2.jpg) center center; 
+	          background-size:cover;" class="slider-size">
+				  <div class="carousel-caption">
+				  <h3 class="title">Bungie's "Destiny" #1 top seller on the first day of release</h3>
+				  <p class="slogan">Some say it might beat GTA5 in the best selling game ever.</p>
+				  </div>
+				</div>
 			</div>
 			<div class="item">
-			  <div style="background:url(img/slide2.jpg) center center; 
-          background-size:cover;" class="slider-size">
-			  <div class="carousel-caption">
-			  <h3 class="title">Bungie's "Destiny" #1 top seller on the first day of release</h3>
-			  <p class="slogan">Some say it might beat GTA5 in the best selling game ever.</p>
-			  </div>
-			</div>
+				   <div style="background:url(img/slide3.jpg) center center; 
+	          background-size:cover;" class="slider-size">
+				  <div class="carousel-caption">
+				  <h3 class="title">Will Little Big Planet 3 live up to expectations?</h3>
+				  <p class="slogan">Has Media Molecule completely changed the formula?</p>
+				  </div>
+		  </div>
 		</div>
 		<div class="item">
-			   <div style="background:url(img/slide3.jpg) center center; 
-          background-size:cover;" class="slider-size">
-			  <div class="carousel-caption">
-			  <h3 class="title">Will Little Big Planet 3 live up to expectations?</h3>
-			  <p class="slogan">Has Media Molecule completely changed the formula?</p>
-			  </div>
-	  </div>
+				   <div style="background:url(img/slide4.jpg) center center; 
+	          background-size:cover;" class="slider-size">
+				  <div class="carousel-caption">
+				  <h3 class="title">Nokia to release tool to use controllers on your smartphone.</h3>
+				  <p class="slogan">Will this help Nokia sell their phones to gamers?</p>
+				  </div>
+		  </div>
 	</div>
-	<div class="item">
-			   <div style="background:url(img/slide4.jpg) center center; 
-          background-size:cover;" class="slider-size">
-			  <div class="carousel-caption">
-			  <h3 class="title">Nokia to release tool to use controllers on your smartphone.</h3>
-			  <p class="slogan">Will this help Nokia sell their phones to gamers?</p>
-			  </div>
-	  </div>
-</div>
-	</div>
-
-	  <!-- Controls -->
-	  
-	  
+		</div>
 	
-	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left"></span>
-	  </a>
-	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right"></span>
-	  </a>
-	</div>
-
+		  <!-- Controls -->
+		  
+		  
+		
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		  </a>
+		</div>
 	
-
-
-<div>
-
-<div id="twitbox">  
-<p id="twitter_title">Twitter and Facebook feed</p>
-<a class="twitter-timeline" href="https://twitter.com/hashtag/SkalezGames" data-widget-id="511361616068083712">Tweet us at #SkalezGames</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-</div>
-
-<div id="facebook">
-<div class="fb-like-box" data-href="https://www.facebook.com/skalezgames" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
-</div>
-
-</div>
-<div id="relative">	
-<p id="newreleasestitle">New Releases</p>
-<table class="pure-table">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Day</th>
-            <th>Month</th>
-            <th>Console</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr class="pure-table-odd">
-            <td>Super Smash Bros</td>
-            <td>14</td>
-            <td>September</td>
-            <td>3DS</td>
-        </tr>
-
-        <tr class="pure-table-odd">
-            <td>Hyrule Warriors</td>
-            <td>19</td>
-            <td>September</td>
-            <td>Wii U</td>
-        </tr>
-
-        <tr class="pure-table-odd">
-            <td>Wasteland 2</td>
-            <td>19</td>
-            <td>September</td>
-            <td>PC</td>
-        </tr>
-
-        <tr class="pure-table-odd">
-            <td>Stronghold Crusaders 2</td>
-            <td>21</td>
-            <td>September</td>
-            <td>PC</td>
-        </tr>
-
-        <tr class="pure-table-odd">
-            <td>FIFA 15</td>
-            <td>25</td>
-            <td>September</td>
-            <td>All</td>
-        </tr>
-
-        <tr class="pure-table-odd">
-            <td>Alien: Isolation</td>
-            <td>7</td>
-            <td>October</td>
-            <td>All</td>
-        </tr>
-
-        <tr class="pure-table-odd">
-            <td>Borderlands</td>
-            <td>17</td>
-            <td>October</td>
-            <td>All</td>
-        </tr>
-
-        <tr class="pure-table-odd">
-            <td>Run Sackboy Run!</td>
-            <td>TBD</td>
-            <td>October</td>
-            <td>Mobile</td>
-        </tr>
-    </tbody>
-</table>
-
+	<div>
+	
+	<div id="twitbox">  
+	<p id="twitter_title">Twitter and Facebook feed</p>
+	<a class="twitter-timeline" href="https://twitter.com/hashtag/SkalezGames" data-widget-id="511361616068083712">Tweet us at #SkalezGames</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	
+	</div>
+	
+	<div id="facebook">
+	<div class="fb-like-box" data-href="https://www.facebook.com/skalezgames" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+	</div>
+	
+	</div>
+	<div id="relative">	
+		<p id="newreleasestitle">New Releases</p>
+		<table class="pure-table">
+		    <thead>
+		        <tr>
+		            <th>Title</th>
+		            <th>Day</th>
+		            <th>Month</th>
+		            <th>Console</th>
+		        </tr>
+		    </thead>
+		
+		    <tbody>
+		        <tr class="pure-table-odd">
+		            <td>Super Smash Bros</td>
+		            <td>14</td>
+		            <td>September</td>
+		            <td>3DS</td>
+		        </tr>
+		
+		        <tr class="pure-table-odd">
+		            <td>Hyrule Warriors</td>
+		            <td>19</td>
+		            <td>September</td>
+		            <td>Wii U</td>
+		        </tr>
+		
+		        <tr class="pure-table-odd">
+		            <td>Wasteland 2</td>
+		            <td>19</td>
+		            <td>September</td>
+		            <td>PC</td>
+		        </tr>
+		
+		        <tr class="pure-table-odd">
+		            <td>Stronghold Crusaders 2</td>
+		            <td>21</td>
+		            <td>September</td>
+		            <td>PC</td>
+		        </tr>
+		
+		        <tr class="pure-table-odd">
+		            <td>FIFA 15</td>
+		            <td>25</td>
+		            <td>September</td>
+		            <td>All</td>
+		        </tr>
+		
+		        <tr class="pure-table-odd">
+		            <td>Alien: Isolation</td>
+		            <td>7</td>
+		            <td>October</td>
+		            <td>All</td>
+		        </tr>
+		
+		        <tr class="pure-table-odd">
+		            <td>Borderlands</td>
+		            <td>17</td>
+		            <td>October</td>
+		            <td>All</td>
+		        </tr>
+		
+		        <tr class="pure-table-odd">
+		            <td>Run Sackboy Run!</td>
+		            <td>TBD</td>
+		            <td>October</td>
+		            <td>Mobile</td>
+		        </tr>
+		    </tbody>
+		</table>
+	
+	
+		</div>
 
 	</div>
-
-
-
-
-</div>
-</div>
-
-</div>
+	
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>

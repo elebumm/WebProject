@@ -23,7 +23,7 @@
 	<script src="js/jquery-2.1.1.min.js"></script>
 		
 </head>
-<body>
+<body id="user_page">
 	<!-- NAVIGATION BAR -->
    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">SkalezGames</a>
+          <a class="navbar-brand" href="index.html"><img id="logo" src="logo.jpg"></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -43,8 +43,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="user_page.php">View Profile</a></li>
-						<li><a href="logout.php">Logout</a></li>
+								<li><a href="logout.php">Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -59,7 +58,7 @@
 	 </div>
 	 <br />
 	 <section id="content">
-	 		<h2>Your Account!</h2>
+	 		<h1>Your Account!</h1>
 
 <?php
 	$servername = "localhost";
@@ -74,36 +73,60 @@
 		die("Connection failed: " . $conn->connect_error);
 	} 
 	
-	$userName = $_SESSION['username'];
-	
-	$sql = "SELECT FirstName, Lastname, userName, password, email, gender FROM users WHERE username = '$userName'";
-	$result = $conn->query($sql);
-	
-	
-	// output data of each row
-    while($row = $result->fetch_assoc()) {       
-				?>
-				<div id="edit_account">
-					<form action="edit_account.php" method="post">
-					<h2>Edit Account Info</h2>
-					<p>Username: <?php echo $row["userName"]; ?></p>
-					<p>First Name: <?php echo $row["FirstName"]; ?></p>
-					<p>Last Name: <?php echo $row["Lastname"]; ?></p>
-					<p>Gender: <?php echo $row["gender"]; ?></p>
-					<label for="email">Email: </label>
-					<input name="email" type="email" value="<?php echo $row["email"]; ?>" ><br />
-					<label for="oldPassword">Old Password: </label>
-					<input name="oldPassword" type="password">
-					<br>
-					<label for="newPassword">New Password: </label>
-					<input name="newPassword" type="password">
-					<br>					
-					<input type="submit" id = "submit" name="submit" value="Edit Account"/> 
+	if ($_SESSION['logged_in']){
 			
-					</form>
-				</div>	
-				<?php
-    }
+			$user = $_SESSION['username'];
+			
+			$sql = "SELECT FirstName, Lastname, userName, password, email, gender FROM users WHERE username = '$user'";
+			$result = $conn->query($sql);
+			
+				// output data of each row
+		    while($row = $result->fetch_assoc()) {       
+						?>
+						<div id="edit_account">
+							<form action="edit_account.php" method="post">
+								<h2>Edit Account Info</h2>
+								<table>
+									<tbody>
+										<tr>
+											<td class="labels">Username:</td>
+											<td><?php echo $row["userName"]; ?></td>	
+										</tr>
+										<tr>
+											<td class="labels">First Name:</td>
+											<td><?php echo $row["FirstName"]; ?></td>	
+										</tr>
+										<tr>
+											<td class="labels">Last Name:</td>
+											<td><?php echo $row["Lastname"]; ?></td>	
+										</tr>
+										<tr>
+											<td class="labels">Gender:</td>
+											<td><?php echo $row["gender"]; ?></td>	
+										</tr>
+										<tr>
+											<td class="labels">Email:</td>
+											<td><input name="email" type="email" value="<?php echo $row["email"]; ?>" ></td>	
+										</tr>
+										<tr>
+											<td class="labels">Current Password:</td>
+											<td><input name="oldPassword" type="password" required="require"></td>	
+										</tr>
+										<tr>
+											<td class="labels">New Password:</td>
+											<td><input name="newPassword" type="password"></td>	
+										</tr>
+									</tbody>
+								</table>							
+								<input type="submit" id = "submit" name="submit" value="Edit Account"/>					 			
+							</form>
+							<a href="logout.php"><button id="submit">Log out</button></a>
+						</div>	
+						<?php
+		    }
+		   }else {
+		   		echo "You are not logged in! <a href='login.html'>Log in.</a>";
+		   }		 
 
 	$conn->close();
 	

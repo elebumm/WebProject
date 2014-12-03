@@ -15,6 +15,7 @@ Date: Oct 31, 2014
 
 #productsTable{
 	position: relative;
+	 margin: auto;
 
 }
 
@@ -59,7 +60,7 @@ caption {
 	text-transform: uppercase;
 	text-align: center;
 	color: white;
-	font-size: 10px;
+	font-size: 15px;
 }
 
 tbody tr:nth-child(even){

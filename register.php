@@ -1,4 +1,8 @@
-ww<!DOCTYPE html>
+<?php
+	session_start();
+?>
+
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -87,6 +91,8 @@ if (mysqli_connect_errno()) {
 			'X-Mailer: PHP/' . phpversion();
 
 			mail($to, $subject, $message, $headers);
+			
+			$_SESSION['username'] = $userName;
 		}
  
 	

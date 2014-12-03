@@ -152,11 +152,15 @@ color:          #5A5A5A;
 }
 
 /* For user page */
+
+#user_page {
+	
+}	
 #content {
 	background-color: white;
 	padding: 2em;
 	margin: 3em auto;
-	width: 80%
+	width: 70%
 }
 
 #content h1 {
@@ -164,7 +168,21 @@ color:          #5A5A5A;
 	color: #12007E;
 }	
 
-#content h3 {
+#content h2 {
 	font-weight: bold;
 }
+
+#content td {
+	padding: 0.5em;
+}
+
+.labels {
+	font-weight: bold;
+}
+
+#submit {
+	padding: 0.5em;
+	margin-top: 10px;
+	text-decoration: none;
+}			 
 	

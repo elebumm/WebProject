@@ -23,7 +23,7 @@
 	
 	$userName = $_SESSION['username'];	
 	$email = $_POST['email'];
-	if ( $_POST['newPassword'] == 0)
+	if ( $_POST['newPassword'] == "")
 		$newPassword = md5($_POST['oldPassword']);
 	else	
 		$newPassword = md5($_POST['newPassword']); 

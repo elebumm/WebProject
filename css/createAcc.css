@@ -6,7 +6,7 @@ Version: 2.0
 Date: Oct 31, 2014
 */
 
-/* CSS for create_account page */
+/* CSS for create_account and login page */
 
 body{
 	background-color: #12007E;
@@ -25,37 +25,7 @@ body{
      -webkit-user-select: none; -khtml-user-select: none; 
      -moz-user-select: none; -o-user-select: none; user-select: none; 
       z-index:9990; 
-    }
-
-#newreleases {
-	position: absolute;
-	right: 120px;
-	bottom: 255px;
-	color: white;
-	float:right;
-
 }
-
-
-#releasetable {
-	position: absolute;
-	right: 1px;
-	bottom: -64px;
-}
-
-
-#twitbox {
-
-}
-
-.cover {
-  background-image: url('../img/backgrounds/');
-}
-
-.pure-table-odd {
-	color: grey;
-}
-
 
 
 #icons {
@@ -134,61 +104,49 @@ color:          #5A5A5A;
 	color: white;
 }
 
-/* Create account section */
+/* Create account and login section */
 
-#createAcc {
-		display: table;
+.left {
+	float: left;
+	margin-top:-4em;
+}
+
+.right {
+	float: right;
+	margin-top: -59em;
+}	
+	
+.pageTitle{
+	text-align: center;
+	font-weight: bold;
+	color:#2A198B; 
+}	
+
+#createAcc, #loginSetup{
 		list-style-type: none;
-		margin: 10% auto;
+		margin: 5% auto;
 		background-color: white;
+		width: 50%
 }
 
-#left-col {
-			float:left;
-			width: 450px;
-			font-family: Tahoma, sans-serif;
-			font-size: 16px;
-			padding-left: 1em;
-			padding-top: 5em
+form {
+	font-family: Tahoma, sans-serif;
+	font-size: 18px;
+	padding: 3em 1em 4em 4em;
 }
-		
-button {
-	width: 85%;
-	padding: 11px 20px;
+
+#login {
+	padding: 3em 1em 1em 4em;	
+}	
+
+form select{
 	font-size: 16px;
-	display: block;
-	border: none;
-	color: white
-}
-		
-button img {
-		padding-right: 5px;
-}
-		
-#facebook {
-		background-color: #3b5897;
-}
-		
-#twitter {
-	background-color: #00b0eb;
-}
-		
-#google {
-	background-color: #bd0000
-}
+}		
 
-#right-col {
-			float: right;
-			width: 350px;
-			font-family: Tahoma, sans-serif;
-			font-size: 16px;
-			left: 600px;
-			padding: 5em 1em 1em 1em;
-}
 
 label {
 	font-family: "proxima-nova","Helvetica Neue","HelveticaNeue",Arial,sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 600;
 	color: #666
 }
@@ -197,23 +155,91 @@ span {
 	color: #e03800;
 }
 
-.checkbox {
+.subscribe {
 	font-family: "proxima-nova","Helvetica Neue","HelveticaNeue",Arial,sans-serif;
-	font-weight: 400;
+	font-size: 15px;
+	padding-top: 1.5em;
 }
 
-#submit {
-			float: right;
-			padding: 9px 16px;
-			min-width: 88px;
-			margin-bottom: 10px;
-			font-size: 16px;
+.submit {
+		float: right;
+		padding: 9px 16px;
+		min-width: 88px;
+		font-size: 16px;
+		margin-right: 4em;
 }
 
 .signup {
-	width: 100%;
+	width: 90%;
 	padding: 0.2em;
 	margin-bottom: 9px;
 	border: 1px solid #bfbfbf;
 	border-radius: 3px
 }
+
+#create {
+		clear: both;
+		padding-top: 3em;
+		text-align: center;
+		font-family: Tahoma, sans-serif;
+		font-size: 14px;
+}
+		
+#create a:link {
+	text-decoration: none;
+}
+
+/* For user page */
+
+#content{
+	padding-top: 4em;
+}
+
+#left-col {
+	padding-top: 3em;
+	float: left;
+	margin-left: 3em;
+}
+
+#left-col p, #right-col p {
+	text-align: center;
+	color: black;
+	font-weight: 700;
+	background-color: white;
+}		
+
+#middle-col {
+	position: relative;
+	list-style-type: none;
+	margin: auto;
+	background-color: white;
+	width: 45%;
+}		
+
+#middle-col h1 {
+	text-align: center;
+	color: #12007E;
+}	
+
+#middle-col h2 {
+	font-weight: bold;
+}
+
+#middle-col td {
+	padding: 0.5em;
+}
+
+
+#submit {
+	padding: 0.5em;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+#right-col {
+	float: right;
+	position: relative;
+	margin-right: 3em;
+	margin-top: -33em;
+}	
+

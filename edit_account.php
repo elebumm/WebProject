@@ -23,14 +23,18 @@
 	
 	$userName = $_SESSION['username'];	
 	$email = $_POST['email'];
+	
+	$criteria = "SELECT Password FROM users WHERE UserName = '$userName'";
+	$result = $conn->query($criteria);
+	
 	if ( $_POST['newPassword'] == "")
-		$newPassword = md5($_POST['oldPassword']);
+			$newPassword = md5($_POST['oldPassword']);
 	else	
-		$newPassword = md5($_POST['newPassword']); 
+			$newPassword = md5($_POST['newPassword']); 
 
 	$sql = "UPDATE users SET Email = '$email', Password = '$newPassword'
-			WHERE UserName = '$userName'";
-
+				WHERE UserName = '$userName'";
+		
 	if (mysqli_query($conn, $sql)) {
 		echo "Account updated successfully";
 	} else {

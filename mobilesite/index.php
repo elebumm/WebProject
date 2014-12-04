@@ -288,10 +288,6 @@
 		</div>
 		<h2>Log In</h2>
 		<form action="login.php" method="post" id="login">
-			<button id="facebook"><img src="img/facebook_icon.png" alt="facebook">Log in with Facebook</button>
-		  <button id="twitter"><img src="img/twitter_icon.png" alt="twitter">Log in with Twitter</button>
-		  <button id="google"><img src="img/google_icon.png" alt="google+">Log in with Google</button>
-		  <br />
 		  <label for="username">Username <span>*</span></label>
 		  <input type="text" id="username" name="username" require="required" />
 		  <label for="password">Password <span>*</span></label>

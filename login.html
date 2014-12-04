@@ -15,7 +15,6 @@ Date: Oct 31, 2014
 
 	<!-- Optional theme --> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/createAcc.css">
 	
 	
 	<!-- Latest compiled and minified JavaScript -->
@@ -25,53 +24,31 @@ Date: Oct 31, 2014
 	<script src="js/navbar.js"></script>
 	
 	<!-- CSS for login section -->
-	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/createAcc.css">
 	
 </head>
 
 <body>
-	<div id="navbar">
-		<!--Navigation bar goes here -->   
-   </div>
-   		 
-   	<div id="content">	
-	   	<div id="loginSetup">
-		   	<div id="left-col">
-		   		<p>You can use your favourite social network account to log in with one click.</p>
-		   		<button id="facebook"><img src="img/facebook_icon.png" alt="facebook">Log in with Facebook</button><br />
-		   		<button id="twitter"><img src="img/twitter_icon.png" alt="twitter">Log in with Twitter</button><br />	
-		   		<button id="google"><img src="img/google_icon.png" alt="google+">Log in with Google</button>
-		   	</div>
-		   	<div id="right-col">
-		   		<p>Use an existing account you have on SkalezGames.</p>
-		   		<form id="login" action="login.php" method="post">
-		   			<label for="username">Username <span>*</span></label><br />
-		   			<input type="text" id="username" name="username" required="require" /><br />
-		   			<label for="password">Password <span>*</span></label><br />	
-		   			<input type="password" id="password" name = "password" required="require" />
-		   			<p class="keeplogin"> 
-		 				<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
-	        	<label for="loginkeeping">Keep me logged in</label>
-					</p>
-		   			<p id="help">
-			   			Resend Email Verification <br />
-			   			Forgot password? <br />
-			   		</p>
-		   			<input type="submit" value="Log in" id="submitButton"/>
-		   		</form>	
-		   	</div>
-		   	<p id="create">If you don't have an account, <a href="create_account.html">create one here!</a></p>	
-	   </div>
-			 <!--
-			   <div class="jumbotron">
-			   <div class="loginfixer">
-			   	
-			   </div>
-			</div>
-			-->
-		</div>   
-
-  
+	<div id="loginbody">
+		<div id="navbar">
+			<!--Navigation bar goes here -->   
+	   </div>   		 
+		  <div id="loginSetup">	   		  		
+			   <form id="login" action="login.php" method="post">
+			   		<p class="pageTitle">Log in to your Skalez Games account.</p>
+			   		<label for="username">Username <span>*</span></label><br />
+			   		<input type="text" class="signup" id="username" name="username" required="required" /><br />
+			   		<label for="password">Password <span>*</span></label><br />	
+			   		<input type="password" class="signup" id="password" name = "password" required="required" />
+			   		<p class="subscribe"> 
+			 				<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+		        	<label for="loginkeeping">Keep me logged in</label>
+						</p>		   			
+			   		<input type="submit" value="Log in" class="submit"/>
+			   		<p id="create">If you don't have an account, <a href="create_account.html">create one here!</a></p>
+			   	</form>			   		
+		  </div>
+		</div>	
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>

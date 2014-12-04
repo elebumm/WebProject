@@ -44,9 +44,6 @@ text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
 	float: right;
 }
 
-
-
-
 #twitbox {
 	position: relative;
 	float: left;
@@ -149,40 +146,5 @@ color:          #5A5A5A;
 }
 .loginfixer {
 	color: white;
-}
-
-/* For user page */
-
-#user_page {
-	
-}	
-#content {
-	background-color: white;
-	padding: 2em;
-	margin: 3em auto;
-	width: 70%
-}
-
-#content h1 {
-	text-align: center;
-	color: #12007E;
-}	
-
-#content h2 {
-	font-weight: bold;
-}
-
-#content td {
-	padding: 0.5em;
-}
-
-.labels {
-	font-weight: bold;
-}
-
-#submit {
-	padding: 0.5em;
-	margin-top: 10px;
-	text-decoration: none;
 }			 
 	

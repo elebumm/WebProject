@@ -1,6 +1,6 @@
 <?php
 session_start();
-header('Refresh: 2; URL=login.html');
+header('Refresh: 2; URL=index.html');
 ?>
 <!DOCTYPE html>
 <html>

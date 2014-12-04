@@ -1,48 +1,5 @@
 <?php
 	session_start();
-?>
-
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-
-	<meta charset="UTF-8">
-	<meta http-equiv="refresh" content="0;url=../index.html">
-	
-	<script language="javascript">
-		window.location.href = "index.html"
-	</script>
-	
-	<title>Loading</title>
-		
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-	<!-- Optional theme --> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	
-	
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<script src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/navbar.js"></script>
-	
-	<!-- CSS for login section -->
-	<link rel="stylesheet" href="css/login.css">
-
-</head>
-
-<body>
-
-</body>
-
-</html>
-
-
-<?php
 
 // Create connection
 $con=mysqli_connect("localhost", "root", "", "skalez_games");
@@ -73,13 +30,20 @@ if (mysqli_connect_errno()) {
 		if ($row['username'] == $userName)
 		{
 			// Prevents Duplicate Usernames.
-			// TODO: Handle Error
+			echo "Username already exists. Please choose another.";
+			header('Refresh: 2; URL=create_account.html');
 	
 		}
+		else if ($password !== $passwordConfirm)
+		{
+			echo "The password fields must match.";
+			header('Refresh: 2; URL=create_account.html');
+			
+		}	
 		else
 		{
 			mysqli_query($con,"INSERT INTO users (FirstName, LastName, UserName, Password, Email, Gender, privilege, get_emails)
-			VALUES ('$firstName', '$lastName' , '$userName' , '$password', '$email' , '$gender', '$auth', '$newsletter')");
+			VALUES ('$firstName', '$lastName' , '$userName' , '$passwordConfirm', '$email' , '$gender', '$auth', '$newsletter')");
 			
 			echo "Registration Successful";
 			
@@ -93,12 +57,10 @@ if (mysqli_connect_errno()) {
 			mail($to, $subject, $message, $headers);
 			
 			$_SESSION['username'] = $userName;
+			$_SESSION['logged_in'] = TRUE;
+			header('Refresh: 2; URL=user_page.php');
 		}
- 
-	
-	
+ 	
 	mysqli_close($con);
-
-
 
 ?>
